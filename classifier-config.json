@@ -1,0 +1,11 @@
+{
+  "version": "worth-content-v2",
+  "checkpoint": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+  "layaVersion": "0.3.28",
+  "candidate": "content-4",
+  "questionIdentity": "content-4-no-fact-penalty",
+  "calibrationIdentity": "checkpoint-default-uncalibrated",
+  "calibrationFile": null,
+  "releaseGatePassed": false,
+  "status": "Conservative fallback: the experimental five-choice classifier failed held-out accuracy checks. Automatic skipping is disabled."
+}

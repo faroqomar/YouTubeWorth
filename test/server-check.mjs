@@ -1,0 +1,51 @@
+import { spawn } from 'node:child_process';
+import { mkdtemp,rm,readFile } from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+const temp=await mkdtemp(join(tmpdir(),'worth-api-'));
+const cwd=new URL('..',import.meta.url);
+const child=spawn(process.execPath,['--import','./test/provider-stub.mjs','server.mjs'],{cwd,env:{...process.env,PORT:'4320',WORTH_WORKER:'test/worker-stub.py',WORTH_RULES_FILE:join(temp,'rules.json')},stdio:['ignore','pipe','pipe']});
+const base='http://127.0.0.1:4320';let errors='';child.stderr.on('data',b=>errors+=b);
+try{
+  for(let i=0;i<80;i++){try{if((await(await fetch(base+'/health')).json()).ready)break;}catch{}await new Promise(r=>setTimeout(r,100));}
+  assert.equal((await(await fetch(base+'/health')).json()).ready,true,errors);
+  const token=(await readFile(new URL('../.local-token',import.meta.url),'utf8')).trim();
+  const input={videoId:'abcdefghijk',duration:120,title:'Lesson',cues:Array.from({length:12},(_,i)=>({start:i*10,end:(i+1)*10,text:'Meaningful text'}))};
+  const post=(path,payload,headers={})=>fetch(base+path,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${token}`,...headers},body:JSON.stringify(payload)});
+  assert.equal((await post('/api/analyze',{input},{Authorization:'Bearer wrong'})).status,401);
+  assert.equal((await post('/api/analyze',{input},{Origin:'https://malicious.example'})).status,403);
+  assert.equal((await fetch(base+'/setup',{headers:{Origin:'chrome-extension://'+'a'.repeat(32)}})).status,403);
+  assert.equal((await post('/api/configure',{})).status,404);
+  assert.ok(!(await(await fetch(base+'/local-config.js')).text()).includes(token));
+  assert.equal((await post('/api/analyze',{input:{...input,cues:[]}})).status,400);
+  assert.equal((await post('/api/transcript',{input:{...input,videoId:'invalid'}})).status,400);
+  assert.equal((await post('/api/transcript',{input},{Authorization:'Bearer wrong'})).status,401);
+  const captions=await(await post('/api/transcript',{input:{...input,cues:[]}})).json();
+  assert.equal(captions.language,'en-US');assert.equal(captions.cues[1].start,100);
+  const first=await post('/api/analyze',{input},{Origin:'chrome-extension://'+'a'.repeat(32)});assert.equal(first.status,200);assert.equal(first.headers.get('access-control-allow-origin'),'chrome-extension://'+'a'.repeat(32));
+  const a=await first.json();assert.equal(a.result.totals.keep,100);assert.equal(a.cached,false);assert.equal(a.result.provider,'Laya');assert.equal(a.result.local,true);
+  const b=await(await post('/api/analyze',{input})).json();assert.equal(b.cached,true);
+  const facts=await(await post('/api/verify',{input})).json();assert.equal(facts.checks.length,1);assert.equal(facts.checks[0].status,'supported');assert.deepEqual(facts.checks[0].sources,[{url:'https://en.wikipedia.org/wiki/Earth',title:'Earth'}]);
+  const getRules=(auth=true)=>fetch(base+'/api/rules',{headers:auth?{Authorization:`Bearer ${token}`}:{}});
+  assert.equal((await getRules(false)).status,401);
+  const config=(await(await getRules()).json()).rules;
+  assert.equal((await post('/api/rules',{rules:config},{Origin:'https://malicious.example'})).status,403);
+  assert.equal((await post('/api/rules',{rules:{...config,skipConfidence:2}})).status,400);
+  assert.equal((await post('/api/rules',{rules:{...config,showImportantOnPlayer:false}})).status,200);
+  assert.equal((await(await post('/api/analyze',{input})).json()).cached,true,'Presentation changes reuse judgments');
+  assert.equal((await post('/api/rules',{rules:{...config,worthRatio:.8}})).status,200);
+  assert.equal(JSON.parse(await readFile(join(temp,'rules.json'),'utf8')).rules.worthRatio,.8);
+  assert.equal((await post('/api/verify',{input,analysisId:a.result.analysisId})).status,400);
+  assert.equal((await(await post('/api/analyze',{input})).json()).cached,false);
+  assert.equal((await(await post('/api/analyze',{input})).json()).cached,true);
+  await post('/api/rules',{rules:config});
+  const slow={...input,title:'Slow fixture',goal:'snapshot'};const running=post('/api/analyze',{input:slow});
+  for(let i=0;i<50;i++){const p=await(await fetch(base+'/api/progress?videoId='+input.videoId,{headers:{Authorization:`Bearer ${token}`}})).json();if('completed'in p)break;await new Promise(r=>setTimeout(r,10));}
+  await post('/api/rules',{rules:{...config,worthRatio:.95,maxClaims:0}});
+  const snapshot=await(await running).json();assert.equal(snapshot.result.verdict,'worth','Running job retains its starting threshold');
+  assert.equal((await post('/api/verify',{input:slow,analysisId:snapshot.result.analysisId})).status,400,'Old analysis cannot use new source-check rules');
+  const cancellation=new AbortController();const abandoned=fetch(base+'/api/analyze',{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${token}`},body:JSON.stringify({input:{...slow,goal:'cancel'}}),signal:cancellation.signal}).catch(e=>e.name);
+  await new Promise(r=>setTimeout(r,50));cancellation.abort();assert.equal(await abandoned,'AbortError');
+  console.log('Local service checks passed: worker transport, auth, origin, input, cache, source filtering, no credential leak. Inference and retrieval mocked.');
+}finally{child.kill('SIGTERM');await rm(temp,{recursive:true,force:true});}

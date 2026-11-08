@@ -1,0 +1,13 @@
+.local-token
+extension/local-config.js
+.venv/
+runtime/
+preview/
+__pycache__/
+*.pyc
+*.zip
+.DS_Store
+node_modules/
+.env
+.env.*
+evaluation/calibration-experiment.json

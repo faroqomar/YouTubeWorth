@@ -1,0 +1,18 @@
+{
+  "name": "youtube-worth",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "docs:generate": "node scripts/docs.mjs --write",
+    "docs:check": "node scripts/docs.mjs",
+    "package": "python3 scripts/package.py",
+    "test:api": "node test/server-check.mjs",
+    "test:settings": "node test/dashboard-check.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

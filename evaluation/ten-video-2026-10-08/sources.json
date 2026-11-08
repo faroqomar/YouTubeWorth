@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-08",
+  "viewingGoal": "Understand the whole video topic",
+  "sources": [
+    {
+      "videoId": "Tn6-PIqc4UM",
+      "title": "React in 100 Seconds",
+      "channel": "Fireship",
+      "category": "coding",
+      "duration": 128,
+      "language": "en",
+      "cueCount": 67,
+      "inputSha256": "1253904d941a5622a2ea26be8716d0d1337f6867c546e739ba08052d0ad101ae",
+      "url": "https://www.youtube.com/watch?v=Tn6-PIqc4UM"
+    },
+    {
+      "videoId": "x7X9w_GIm1s",
+      "title": "Python in 100 Seconds",
+      "channel": "Fireship",
+      "category": "coding",
+      "duration": 143,
+      "language": "en",
+      "cueCount": 72,
+      "inputSha256": "9ae0a606f840974925fed3f16f5c64539595629ee8608263696695d6ce723d3a",
+      "url": "https://www.youtube.com/watch?v=x7X9w_GIm1s"
+    },
+    {
+      "videoId": "rrB13utjYV4",
+      "title": "Linux in 100 Seconds",
+      "channel": "Fireship",
+      "category": "coding",
+      "duration": 161,
+      "language": "en",
+      "cueCount": 81,
+      "inputSha256": "8bc1abe7a36c07e2cd4d92e3aa8f50893e488479789bdf1aaefb5bdb058be66c",
+      "url": "https://www.youtube.com/watch?v=rrB13utjYV4"
+    },
+    {
+      "videoId": "Gjnup-PuquQ",
+      "title": "Docker in 100 Seconds",
+      "channel": "Fireship",
+      "category": "coding",
+      "duration": 127,
+      "language": "en",
+      "cueCount": 72,
+      "inputSha256": "97e90cd7d32419ef7866f582d9ec632f8738742707615f3dbfc271a8a55ec343",
+      "url": "https://www.youtube.com/watch?v=Gjnup-PuquQ"
+    },
+    {
+      "videoId": "7r4ikZHm9AI",
+      "title": "Anthropic researchers are quitting... and now we know why",
+      "channel": "Fireship",
+      "category": "AI discussion",
+      "duration": 376,
+      "language": "en",
+      "cueCount": 194,
+      "inputSha256": "eb8bb5cfcc05fe73dbf2eda40234d5cd4b081607de9bad0d3eb3f2c8a11f8370",
+      "url": "https://www.youtube.com/watch?v=7r4ikZHm9AI"
+    },
+    {
+      "videoId": "WrCjAAl9okA",
+      "title": "A $6.3 billion open-weight model just got embarrassed by the French...",
+      "channel": "Fireship",
+      "category": "AI discussion",
+      "duration": 370,
+      "language": "en",
+      "cueCount": 189,
+      "inputSha256": "0f2aa714fed7632dde052a922b891b668bff92d8276895b54439f4c436a96098",
+      "url": "https://www.youtube.com/watch?v=WrCjAAl9okA"
+    },
+    {
+      "videoId": "z19HM7ANZlo",
+      "title": "The M4 Mac Mini is Incredible!",
+      "channel": "Marques Brownlee",
+      "category": "review",
+      "duration": 705,
+      "language": "en",
+      "cueCount": 291,
+      "inputSha256": "1a0dd3f601cdb63e287a1d8c694f132b08583728aa7afd91fa303b8c1e4fbba7",
+      "url": "https://www.youtube.com/watch?v=z19HM7ANZlo"
+    },
+    {
+      "videoId": "rng_yUSwrgU",
+      "title": "iPhone 17 Review: No Asterisks!",
+      "channel": "Marques Brownlee",
+      "category": "review",
+      "duration": 680,
+      "language": "en",
+      "cueCount": 299,
+      "inputSha256": "40baa0bf3cf20c95f8115a0e5e4d6aab22ee5a27f277d04b9e4abf74da0f38fe",
+      "url": "https://www.youtube.com/watch?v=rng_yUSwrgU"
+    },
+    {
+      "videoId": "PeMlggyqz0Y",
+      "title": "Machine Learning Explained in 100 Seconds",
+      "channel": "Fireship",
+      "category": "explainer",
+      "duration": 154,
+      "language": "en",
+      "cueCount": 78,
+      "inputSha256": "aa50375e8314103b76bfa0f083d34bd0aaf71ee4bc09819888d3de675284c165",
+      "url": "https://www.youtube.com/watch?v=PeMlggyqz0Y"
+    },
+    {
+      "videoId": "aircAruvnKk",
+      "title": "But what is a neural network? | Deep learning chapter 1",
+      "channel": "3Blue1Brown",
+      "category": "explainer",
+      "duration": 1120,
+      "language": "en",
+      "cueCount": 286,
+      "inputSha256": "bbc0fba3a9ccd84e2c860dc5403483a8ad7db30028300ce1cda8153ced78a1d7",
+      "url": "https://www.youtube.com/watch?v=aircAruvnKk"
+    }
+  ]
+}

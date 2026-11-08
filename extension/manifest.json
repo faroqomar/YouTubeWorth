@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Worth \u2014 Your YouTube viewing map",
+  "version": "0.4.0",
+  "description": "Experimental alpha: map useful YouTube passages with local Laya. Review suggestions manually; automatic skipping is disabled.",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:4318/*"
+  ],
+  "action": {
+    "default_title": "Worth \u2014 Analyse this video"
+  },
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "options_ui": {
+    "page": "dashboard.html",
+    "open_in_tab": true
+  },
+  "version_name": "0.4.0 alpha"
+}

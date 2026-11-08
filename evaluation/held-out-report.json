@@ -1,0 +1,511 @@
+{
+  "metrics": {
+    "count": 60,
+    "usefulCorrect": 17,
+    "usefulPredicted": 37,
+    "usefulTotal": 20,
+    "precision": 0.4594594594594595,
+    "recall": 0.85,
+    "clearFillerFound": 0,
+    "clearFillerTotal": 20,
+    "fillerRecall": 0.0,
+    "harmfulFillerDecisions": 0,
+    "automaticSkips": 0,
+    "harmfulAutomaticSkips": 0,
+    "decidedCoverage": 0.6166666666666667,
+    "seconds": 1060,
+    "usefulSecondsHighlighted": 442,
+    "fillerSecondsIdentified": 0
+  },
+  "sampleGatePassed": false,
+  "releaseGatePassed": false,
+  "limitations": [
+    "Agent-reviewed transcript labels, not independent human ground truth.",
+    "No visual review; visual gameplay retained as context.",
+    "Four whole held-out videos; excerpts within a video are correlated.",
+    "Clear-filler cases are short boundary-level excerpts; not representative of all automatic 25-second windows.",
+    "Automatic skipping is disabled; zero executed harmful skips is not evidence of skip accuracy."
+  ],
+  "rows": [
+    {
+      "id": "mc6HxWv6NgY:17-52",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.9786,
+      "seconds": 35,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:425-454",
+      "expected": "keep",
+      "predicted": "context",
+      "confidence": 0.499,
+      "seconds": 29,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:512-541",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.9939,
+      "seconds": 29,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:109-124",
+      "expected": "context",
+      "predicted": "context",
+      "confidence": 0.9562,
+      "seconds": 15,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:136-156",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.805,
+      "seconds": 20,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:165-184",
+      "expected": "context",
+      "predicted": "context",
+      "confidence": 0.6634,
+      "seconds": 19,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:225-250",
+      "expected": "context",
+      "predicted": "context",
+      "confidence": 0.9207,
+      "seconds": 25,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:265-286",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.7227,
+      "seconds": 21,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:300-318",
+      "expected": "context",
+      "predicted": "context",
+      "confidence": 0.7317,
+      "seconds": 18,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:335-355",
+      "expected": "context",
+      "predicted": "context",
+      "confidence": 0.8387,
+      "seconds": 20,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:457-478",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.822,
+      "seconds": 21,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:548-571",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.7073,
+      "seconds": 23,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:590-613",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.5935,
+      "seconds": 23,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:632-654",
+      "expected": "context",
+      "predicted": "context",
+      "confidence": 0.579,
+      "seconds": 22,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "mc6HxWv6NgY:710-730",
+      "expected": "context",
+      "predicted": "context",
+      "confidence": 0.4303,
+      "seconds": 20,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:52-75",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.8867,
+      "seconds": 23,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:120-145",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.8147,
+      "seconds": 25,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:198-221",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.982,
+      "seconds": 23,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:326-341",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.9003,
+      "seconds": 15,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:386-409",
+      "expected": "keep",
+      "predicted": "context",
+      "confidence": 0.4406,
+      "seconds": 23,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:446-468",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.9664,
+      "seconds": 22,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:632-662",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.9736,
+      "seconds": 30,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:801-826",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.9471,
+      "seconds": 25,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:849-857",
+      "expected": "skip",
+      "predicted": "keep",
+      "confidence": 0.6858,
+      "seconds": 8,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:857-864",
+      "expected": "skip",
+      "predicted": "keep",
+      "confidence": 0.9576,
+      "seconds": 7,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:864-872",
+      "expected": "skip",
+      "predicted": "keep",
+      "confidence": 0.9578,
+      "seconds": 8,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:883-887",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 0.8108,
+      "seconds": 4,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:838-849",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.8851,
+      "seconds": 11,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "sQXFhh_PiG4:872-883",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.851,
+      "seconds": 11,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:45-71",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.8168,
+      "seconds": 26,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:336-360",
+      "expected": "keep",
+      "predicted": "context",
+      "confidence": 0.44,
+      "seconds": 24,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:446-473",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.8742,
+      "seconds": 27,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:959-978",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.6488,
+      "seconds": 19,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:1251-1281",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.9672,
+      "seconds": 30,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:204-211",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 0.3544,
+      "seconds": 7,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:211-219",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 0.517,
+      "seconds": 8,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:578-585",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 1.0,
+      "seconds": 7,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:760-768",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 0.8465,
+      "seconds": 8,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:768-779",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 0.9844,
+      "seconds": 11,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:1483-1490",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 0.9026,
+      "seconds": 7,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:1490-1498",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 0.8955,
+      "seconds": 8,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:1498-1504",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 0.4375,
+      "seconds": 6,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:1504-1509",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 0.3141,
+      "seconds": 5,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:1509-1514",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 0.6639,
+      "seconds": 5,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:221-248",
+      "expected": "context",
+      "predicted": "context",
+      "confidence": 0.9897,
+      "seconds": 27,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:248-274",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.7645,
+      "seconds": 26,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "-mv1Tf26Vms:274-292",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.9417,
+      "seconds": 18,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:59-87",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.9947,
+      "seconds": 28,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:118-143",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.9055,
+      "seconds": 25,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:244-272",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.5303,
+      "seconds": 28,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:1629-1661",
+      "expected": "keep",
+      "predicted": "keep",
+      "confidence": 0.7768,
+      "seconds": 32,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:1942-1952",
+      "expected": "skip",
+      "predicted": "keep",
+      "confidence": 0.5452,
+      "seconds": 10,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:1952-1961",
+      "expected": "skip",
+      "predicted": "context",
+      "confidence": 0.395,
+      "seconds": 9,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:1961-1969",
+      "expected": "skip",
+      "predicted": "keep",
+      "confidence": 0.5227,
+      "seconds": 8,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:1969-1979",
+      "expected": "skip",
+      "predicted": "keep",
+      "confidence": 0.5866,
+      "seconds": 10,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:1979-1992",
+      "expected": "skip",
+      "predicted": "keep",
+      "confidence": 0.6221,
+      "seconds": 13,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:1992-1997",
+      "expected": "skip",
+      "predicted": "keep",
+      "confidence": 0.8043,
+      "seconds": 5,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:10-24",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.5209,
+      "seconds": 14,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:45-59",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.7226,
+      "seconds": 14,
+      "autoSkipEligible": false
+    },
+    {
+      "id": "Wkaw03p3BrM:1922-1942",
+      "expected": "context",
+      "predicted": "keep",
+      "confidence": 0.9952,
+      "seconds": 20,
+      "autoSkipEligible": false
+    }
+  ]
+}

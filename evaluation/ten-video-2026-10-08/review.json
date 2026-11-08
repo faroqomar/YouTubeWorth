@@ -1,0 +1,347 @@
+{
+  "reviewedAt": "2026-10-08T14:19:35.267062+00:00",
+  "reviewer": "Implementing agent, transcript-based, before inference",
+  "goal": "Understand the whole video topic",
+  "rubric": {
+    "keep": "Explanations, evidence, useful examples, comparisons, teaching stories, meaningful opinions and conclusions.",
+    "context": "Mixed promotion and information, satirical detours, uncertain boundaries or transitions.",
+    "skip": "Clear channel housekeeping, pure promotional call to action or empty farewell.",
+    "unknown": "Non-speech, missing captions or unreviewed visual content."
+  },
+  "limitations": [
+    "One agent review; no independent human labels or full visual review.",
+    "All ten selected videos contain substantial topic-relevant material, so rejection of wholly low-value videos is not tested.",
+    "Seven videos are from Fireship; creator/style balance is limited.",
+    "Technical and news claims are assessed for relevance, not independently fact-checked."
+  ],
+  "videos": [
+    {
+      "videoId": "Tn6-PIqc4UM",
+      "expectedVerdict": "worth",
+      "verdictReason": "Substantial relevant explanation or reasoned assessment for understanding the whole topic; optional material does not erase the core value.",
+      "intervals": [
+        {
+          "start": 0,
+          "end": 109.68,
+          "label": "keep",
+          "rationale": "React components, props, hooks, ecosystem choices and career relevance."
+        },
+        {
+          "start": 109.68,
+          "end": 113.36,
+          "label": "context",
+          "rationale": "Conclusion crosses into channel outro."
+        },
+        {
+          "start": 113.36,
+          "end": 128,
+          "label": "skip",
+          "rationale": "Likes, subscription, site and personal-channel promotion."
+        }
+      ]
+    },
+    {
+      "videoId": "x7X9w_GIm1s",
+      "expectedVerdict": "worth",
+      "verdictReason": "Substantial relevant explanation or reasoned assessment for understanding the whole topic; optional material does not erase the core value.",
+      "intervals": [
+        {
+          "start": 0,
+          "end": 132.52,
+          "label": "keep",
+          "rationale": "Language history, use cases, syntax, paradigms and libraries; product mentions explain the topic."
+        },
+        {
+          "start": 132.52,
+          "end": 136.56,
+          "label": "context",
+          "rationale": "Package-manager instruction crosses into sign-off."
+        },
+        {
+          "start": 136.56,
+          "end": 143,
+          "label": "skip",
+          "rationale": "Like request and farewell."
+        }
+      ]
+    },
+    {
+      "videoId": "rrB13utjYV4",
+      "expectedVerdict": "worth",
+      "verdictReason": "Substantial relevant explanation or reasoned assessment for understanding the whole topic; optional material does not erase the core value.",
+      "intervals": [
+        {
+          "start": 0,
+          "end": 149.819,
+          "label": "keep",
+          "rationale": "History, kernel, GNU and worked terminal commands; opinions and naming anecdotes support understanding."
+        },
+        {
+          "start": 149.819,
+          "end": 154.08,
+          "label": "context",
+          "rationale": "History command recap crosses into closing promotion."
+        },
+        {
+          "start": 154.08,
+          "end": 161,
+          "label": "skip",
+          "rationale": "Channel subscription and farewell."
+        }
+      ]
+    },
+    {
+      "videoId": "Gjnup-PuquQ",
+      "expectedVerdict": "worth",
+      "verdictReason": "Substantial relevant explanation or reasoned assessment for understanding the whole topic; optional material does not erase the core value.",
+      "intervals": [
+        {
+          "start": 0,
+          "end": 107.52,
+          "label": "keep",
+          "rationale": "Teaching scenario, VM comparison, image/container definitions and command workflow."
+        },
+        {
+          "start": 107.52,
+          "end": 111.36,
+          "label": "context",
+          "rationale": "Deployment conclusion and sign-off share a caption."
+        },
+        {
+          "start": 111.36,
+          "end": 127,
+          "label": "skip",
+          "rationale": "Like, subscription and channel housekeeping."
+        }
+      ]
+    },
+    {
+      "videoId": "7r4ikZHm9AI",
+      "expectedVerdict": "worth",
+      "verdictReason": "Substantial relevant explanation or reasoned assessment for understanding the whole topic; optional material does not erase the core value.",
+      "intervals": [
+        {
+          "start": 0,
+          "end": 260.28,
+          "label": "keep",
+          "rationale": "Sets up the safety dispute, summarises reported misuse examples and offers an assessment; accuracy is not independently checked."
+        },
+        {
+          "start": 260.28,
+          "end": 281.76,
+          "label": "context",
+          "rationale": "Satirical Georgia Guidestones detour contributes little to the threat-report explanation."
+        },
+        {
+          "start": 281.76,
+          "end": 319.52,
+          "label": "keep",
+          "rationale": "Explains a competing risk argument and its conclusion."
+        },
+        {
+          "start": 319.52,
+          "end": 363.32,
+          "label": "context",
+          "rationale": "Sponsor pitch includes technical workflow explanations; preserve as optional mixed material."
+        },
+        {
+          "start": 363.32,
+          "end": 375.52,
+          "label": "skip",
+          "rationale": "Free-trial call to action and channel farewell."
+        },
+        {
+          "start": 375.52,
+          "end": 376,
+          "label": "unknown",
+          "rationale": "Uncaptioned tail."
+        }
+      ]
+    },
+    {
+      "videoId": "WrCjAAl9okA",
+      "expectedVerdict": "worth",
+      "verdictReason": "Substantial relevant explanation or reasoned assessment for understanding the whole topic; optional material does not erase the core value.",
+      "intervals": [
+        {
+          "start": 0,
+          "end": 313.6,
+          "label": "keep",
+          "rationale": "Model release comparison, privacy motivation, caveats and conditional model recommendations."
+        },
+        {
+          "start": 313.6,
+          "end": 358.88,
+          "label": "context",
+          "rationale": "Sponsor transition and browser-tool demonstration contain optional technical information."
+        },
+        {
+          "start": 358.88,
+          "end": 370,
+          "label": "skip",
+          "rationale": "Discount code, credits and farewell."
+        }
+      ]
+    },
+    {
+      "videoId": "z19HM7ANZlo",
+      "expectedVerdict": "worth",
+      "verdictReason": "Substantial relevant explanation or reasoned assessment for understanding the whole topic; optional material does not erase the core value.",
+      "intervals": [
+        {
+          "start": 0,
+          "end": 25.89,
+          "label": "unknown",
+          "rationale": "Unboxing noises and music; visuals have not been reviewed."
+        },
+        {
+          "start": 25.89,
+          "end": 343.883,
+          "label": "keep",
+          "rationale": "Design, ports, power-button teaching story, noise, pricing and real usage; opinions are relevant."
+        },
+        {
+          "start": 343.883,
+          "end": 347.52,
+          "label": "skip",
+          "rationale": "Subscribe and stay tuned for another review."
+        },
+        {
+          "start": 347.52,
+          "end": 696.84,
+          "label": "keep",
+          "rationale": "Performance, pricing ladder, upgrades, portable-workstation story and benchmark interpretation."
+        },
+        {
+          "start": 696.84,
+          "end": 700.947,
+          "label": "skip",
+          "rationale": "Farewell."
+        },
+        {
+          "start": 700.947,
+          "end": 705,
+          "label": "unknown",
+          "rationale": "Music tail without reviewed visuals."
+        }
+      ]
+    },
+    {
+      "videoId": "rng_yUSwrgU",
+      "expectedVerdict": "worth",
+      "verdictReason": "Substantial relevant explanation or reasoned assessment for understanding the whole topic; optional material does not erase the core value.",
+      "intervals": [
+        {
+          "start": 0,
+          "end": 7.68,
+          "label": "unknown",
+          "rationale": "Music introduction."
+        },
+        {
+          "start": 7.68,
+          "end": 121.68,
+          "label": "keep",
+          "rationale": "Teaching skit explains why a buyer with unlimited money may still choose the base model."
+        },
+        {
+          "start": 121.68,
+          "end": 136.959,
+          "label": "context",
+          "rationale": "Skit checkout and music transition."
+        },
+        {
+          "start": 136.959,
+          "end": 671.44,
+          "label": "keep",
+          "rationale": "Features, comparisons, limitations, opinions and reasoned final recommendation."
+        },
+        {
+          "start": 671.44,
+          "end": 675.5,
+          "label": "skip",
+          "rationale": "Farewell."
+        },
+        {
+          "start": 675.5,
+          "end": 680,
+          "label": "unknown",
+          "rationale": "Music and uncaptioned tail."
+        }
+      ]
+    },
+    {
+      "videoId": "PeMlggyqz0Y",
+      "expectedVerdict": "worth",
+      "verdictReason": "Substantial relevant explanation or reasoned assessment for understanding the whole topic; optional material does not erase the core value.",
+      "intervals": [
+        {
+          "start": 0,
+          "end": 141.68,
+          "label": "keep",
+          "rationale": "Definitions, feature engineering, train/test separation, algorithm choices, losses and deployment."
+        },
+        {
+          "start": 141.68,
+          "end": 145.56,
+          "label": "context",
+          "rationale": "Deployment conclusion crosses into sign-off."
+        },
+        {
+          "start": 145.56,
+          "end": 154,
+          "label": "skip",
+          "rationale": "Likes, subscription, comment request and farewell."
+        }
+      ]
+    },
+    {
+      "videoId": "aircAruvnKk",
+      "expectedVerdict": "worth",
+      "verdictReason": "Substantial relevant explanation or reasoned assessment for understanding the whole topic; optional material does not erase the core value.",
+      "intervals": [
+        {
+          "start": 0,
+          "end": 987.58,
+          "label": "keep",
+          "rationale": "Digit example, layered reasoning, weights, biases, sigmoid, matrix notation and meaningful wrap-up; prerequisite resources support understanding."
+        },
+        {
+          "start": 987.58,
+          "end": 1010.76,
+          "label": "context",
+          "rationale": "Subscription pitch mixed with recommendation-system analogy."
+        },
+        {
+          "start": 1010.76,
+          "end": 1023.6,
+          "label": "skip",
+          "rationale": "Patreon thanks and unrelated series housekeeping."
+        },
+        {
+          "start": 1023.6,
+          "end": 1035.46,
+          "label": "context",
+          "rationale": "Guest credentials and sponsor disclosure precede substantive discussion."
+        },
+        {
+          "start": 1035.46,
+          "end": 1105.1,
+          "label": "keep",
+          "rationale": "Important correction and explanation of modern ReLU usage."
+        },
+        {
+          "start": 1105.1,
+          "end": 1105.64,
+          "label": "skip",
+          "rationale": "Thank-you sign-off."
+        },
+        {
+          "start": 1105.64,
+          "end": 1120,
+          "label": "unknown",
+          "rationale": "Uncaptioned tail; visuals not reviewed."
+        }
+      ]
+    }
+  ]
+}

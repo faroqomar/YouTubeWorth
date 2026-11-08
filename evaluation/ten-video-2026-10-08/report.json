@@ -1,0 +1,5453 @@
+{
+  "date": "2026-10-08",
+  "method": "Frozen agent transcript review compared against the deployed Chrome extension local API with real Laya. Time-weighted overlap on caption-covered intervals; unknown reference regions excluded from precision/recall and reported separately.",
+  "classifier": {
+    "version": "worth-content-v2",
+    "checkpoint": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+    "layaVersion": "0.3.28",
+    "candidate": "content-4",
+    "questionIdentity": "content-4-no-fact-penalty",
+    "calibrationIdentity": "checkpoint-default-uncalibrated",
+    "calibrationFile": null,
+    "releaseGatePassed": false,
+    "status": "Conservative fallback: the experimental five-choice classifier failed held-out accuracy checks. Automatic skipping is disabled."
+  },
+  "metrics": {
+    "usefulCorrectSeconds": 3084.315999999996,
+    "usefulReferenceSeconds": 3505.5179999999964,
+    "highlightedKnownSeconds": 3161.473999999996,
+    "usefulPrecision": 0.9755942955722552,
+    "usefulRecall": 0.8798460027876049,
+    "clearFillerSeconds": 98.38399999999973,
+    "clearFillerIdentifiedSeconds": 9.46699999999987,
+    "clearFillerRecall": 0.09622499593429722,
+    "fillerHighlightedSeconds": 9.276999999999958,
+    "usefulOmittedFromHighlightsSeconds": 421.2020000000002,
+    "usefulMarkedSkipSeconds": 2.4529999999999745,
+    "mixedMarkedSkipSeconds": 0.0,
+    "unknownReferenceHighlightedSeconds": 7.926999999999999,
+    "videoCount": 10,
+    "durationSeconds": 3964,
+    "cueCount": 1629,
+    "verdictMatches": 8,
+    "captionCoveredSeconds": 3804.4889999999955,
+    "highlightedSeconds": 3169.4009999999957,
+    "automaticSkipsExecuted": 0,
+    "elapsedAnalysisSeconds": 11.057
+  },
+  "confusionSeconds": {
+    "keep": {
+      "keep": 3084.315999999996,
+      "context": 418.749,
+      "skip": 2.4529999999999745,
+      "unknown": 0.0
+    },
+    "context": {
+      "keep": 67.88099999999989,
+      "context": 107.32000000000004,
+      "skip": 0.0,
+      "unknown": 0.0
+    },
+    "skip": {
+      "keep": 9.276999999999958,
+      "context": 79.6399999999999,
+      "skip": 9.46699999999987,
+      "unknown": 0.0
+    },
+    "unknown": {
+      "keep": 7.926999999999999,
+      "context": 13.876000000000062,
+      "skip": 3.58299999999997,
+      "unknown": 0.0
+    }
+  },
+  "sampleTargetsMet": false,
+  "limitations": [
+    "One agent review; no independent human labels or full visual review.",
+    "All ten selected videos contain substantial topic-relevant material, so rejection of wholly low-value videos is not tested.",
+    "Seven videos are from Fireship; creator/style balance is limited.",
+    "Technical and news claims are assessed for relevance, not independently fact-checked.",
+    "Automatic skipping was disabled; zero executed skips cannot establish safe skip accuracy.",
+    "This is a fresh sample audit of the four-choice production fallback; it does not replace or invalidate the historical five-choice failure.",
+    "Mixed and uncertain passages may be safely retained but still absent from Useful only; highlight recall measures that omission."
+  ],
+  "videos": [
+    {
+      "videoId": "Tn6-PIqc4UM",
+      "title": "React in 100 Seconds",
+      "channel": "Fireship",
+      "category": "coding",
+      "duration": 128,
+      "language": "en",
+      "cueCount": 67,
+      "inputSha256": "1253904d941a5622a2ea26be8716d0d1337f6867c546e739ba08052d0ad101ae",
+      "url": "https://www.youtube.com/watch?v=Tn6-PIqc4UM",
+      "reviewVerdict": "worth",
+      "worthVerdict": "worth",
+      "verdictMatch": true,
+      "totals": {
+        "keep": 104.80000000000001,
+        "skip": 0,
+        "context": 22.959999999999994,
+        "unknown": 0.24
+      },
+      "captionCoveredSeconds": 127.76,
+      "metrics": {
+        "usefulCorrectSeconds": 104.80000000000001,
+        "usefulReferenceSeconds": 109.44000000000001,
+        "highlightedKnownSeconds": 104.80000000000001,
+        "usefulPrecision": 1.0,
+        "usefulRecall": 0.9576023391812866,
+        "clearFillerSeconds": 14.64,
+        "clearFillerIdentifiedSeconds": 0.0,
+        "clearFillerRecall": 0.0,
+        "fillerHighlightedSeconds": 0.0,
+        "usefulOmittedFromHighlightsSeconds": 4.640000000000001,
+        "usefulMarkedSkipSeconds": 0.0,
+        "mixedMarkedSkipSeconds": 0.0,
+        "unknownReferenceHighlightedSeconds": 0.0
+      },
+      "confusionSeconds": {
+        "keep": {
+          "keep": 104.80000000000001,
+          "context": 4.640000000000001,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "context": {
+          "keep": 0.0,
+          "context": 3.6799999999999926,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "skip": {
+          "keep": 0.0,
+          "context": 14.64,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "unknown": {
+          "keep": 0.0,
+          "context": 0.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        }
+      },
+      "analysisId": "8ab6d635ee047eb76819e1fe0a9f69056f0fd70457fd9b46247c9332bfa4c31e",
+      "cached": false,
+      "elapsedSeconds": 0.993,
+      "segments": [
+        {
+          "start": 0,
+          "end": 0.24,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 0.24,
+          "end": 27.279,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 27.279,
+          "end": 53.92,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 53.92,
+          "end": 79.92,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 79.92,
+          "end": 105.04,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 105.04,
+          "end": 128,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        }
+      ]
+    },
+    {
+      "videoId": "x7X9w_GIm1s",
+      "title": "Python in 100 Seconds",
+      "channel": "Fireship",
+      "category": "coding",
+      "duration": 143,
+      "language": "en",
+      "cueCount": 72,
+      "inputSha256": "9ae0a606f840974925fed3f16f5c64539595629ee8608263696695d6ce723d3a",
+      "url": "https://www.youtube.com/watch?v=x7X9w_GIm1s",
+      "reviewVerdict": "worth",
+      "worthVerdict": "worth",
+      "verdictMatch": true,
+      "totals": {
+        "keep": 128.439,
+        "skip": 0,
+        "context": 14.40100000000001,
+        "unknown": 0.16
+      },
+      "captionCoveredSeconds": 142.84,
+      "metrics": {
+        "usefulCorrectSeconds": 128.439,
+        "usefulReferenceSeconds": 132.36,
+        "highlightedKnownSeconds": 128.439,
+        "usefulPrecision": 1.0,
+        "usefulRecall": 0.9703762466001812,
+        "clearFillerSeconds": 6.439999999999998,
+        "clearFillerIdentifiedSeconds": 0.0,
+        "clearFillerRecall": 0.0,
+        "fillerHighlightedSeconds": 0.0,
+        "usefulOmittedFromHighlightsSeconds": 3.9210000000000207,
+        "usefulMarkedSkipSeconds": 0.0,
+        "mixedMarkedSkipSeconds": 0.0,
+        "unknownReferenceHighlightedSeconds": 0.0
+      },
+      "confusionSeconds": {
+        "keep": {
+          "keep": 128.439,
+          "context": 3.9210000000000207,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "context": {
+          "keep": 0.0,
+          "context": 4.039999999999992,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "skip": {
+          "keep": 0.0,
+          "context": 6.439999999999998,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "unknown": {
+          "keep": 0.0,
+          "context": 0.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        }
+      },
+      "analysisId": "3a111a90bad0dabd4362d7de5b0c2505d032ba60c70a8f7d15a56c34a865cff4",
+      "cached": false,
+      "elapsedSeconds": 0.497,
+      "segments": [
+        {
+          "start": 0,
+          "end": 0.16,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 0.16,
+          "end": 25.24,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 25.24,
+          "end": 51.44,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 51.44,
+          "end": 77.84,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 77.84,
+          "end": 103.52,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 103.52,
+          "end": 128.599,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 128.599,
+          "end": 143,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        }
+      ]
+    },
+    {
+      "videoId": "rrB13utjYV4",
+      "title": "Linux in 100 Seconds",
+      "channel": "Fireship",
+      "category": "coding",
+      "duration": 161,
+      "language": "en",
+      "cueCount": 81,
+      "inputSha256": "8bc1abe7a36c07e2cd4d92e3aa8f50893e488479789bdf1aaefb5bdb058be66c",
+      "url": "https://www.youtube.com/watch?v=rrB13utjYV4",
+      "reviewVerdict": "worth",
+      "worthVerdict": "worth",
+      "verdictMatch": true,
+      "totals": {
+        "keep": 155.64,
+        "skip": 5.360000000000014,
+        "context": 0,
+        "unknown": 0
+      },
+      "captionCoveredSeconds": 161,
+      "metrics": {
+        "usefulCorrectSeconds": 149.819,
+        "usefulReferenceSeconds": 149.819,
+        "highlightedKnownSeconds": 155.64,
+        "usefulPrecision": 0.9625995887946543,
+        "usefulRecall": 1.0,
+        "clearFillerSeconds": 6.9199999999999875,
+        "clearFillerIdentifiedSeconds": 5.360000000000014,
+        "clearFillerRecall": 0.7745664739884427,
+        "fillerHighlightedSeconds": 1.5599999999999739,
+        "usefulOmittedFromHighlightsSeconds": 0.0,
+        "usefulMarkedSkipSeconds": 0.0,
+        "mixedMarkedSkipSeconds": 0.0,
+        "unknownReferenceHighlightedSeconds": 0.0
+      },
+      "confusionSeconds": {
+        "keep": {
+          "keep": 149.819,
+          "context": 0.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "context": {
+          "keep": 4.261000000000024,
+          "context": 0.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "skip": {
+          "keep": 1.5599999999999739,
+          "context": 0.0,
+          "skip": 5.360000000000014,
+          "unknown": 0.0
+        },
+        "unknown": {
+          "keep": 0.0,
+          "context": 0.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        }
+      },
+      "analysisId": "102718ecacfe9b8fd2117ca0ab9eacdab869cdaf3bb6b666c6cc3ed78e6ecfe3",
+      "cached": false,
+      "elapsedSeconds": 0.628,
+      "segments": [
+        {
+          "start": 0,
+          "end": 25.32,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 25.32,
+          "end": 51.6,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 51.6,
+          "end": 77.88,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 77.88,
+          "end": 103.2,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 103.2,
+          "end": 129.72,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 129.72,
+          "end": 155.64,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 155.64,
+          "end": 161,
+          "kind": "skip",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Explicit promotion or housekeeping; both parts contain no classified lesson.",
+          "autoSkipEligible": false
+        }
+      ]
+    },
+    {
+      "videoId": "Gjnup-PuquQ",
+      "title": "Docker in 100 Seconds",
+      "channel": "Fireship",
+      "category": "coding",
+      "duration": 127,
+      "language": "en",
+      "cueCount": 72,
+      "inputSha256": "97e90cd7d32419ef7866f582d9ec632f8738742707615f3dbfc271a8a55ec343",
+      "url": "https://www.youtube.com/watch?v=Gjnup-PuquQ",
+      "reviewVerdict": "worth",
+      "worthVerdict": "worth",
+      "verdictMatch": true,
+      "totals": {
+        "keep": 104,
+        "skip": 0,
+        "context": 22.680000000000007,
+        "unknown": 0.32
+      },
+      "captionCoveredSeconds": 126.68,
+      "metrics": {
+        "usefulCorrectSeconds": 104.0,
+        "usefulReferenceSeconds": 107.2,
+        "highlightedKnownSeconds": 104.0,
+        "usefulPrecision": 1.0,
+        "usefulRecall": 0.9701492537313433,
+        "clearFillerSeconds": 15.64,
+        "clearFillerIdentifiedSeconds": 0.0,
+        "clearFillerRecall": 0.0,
+        "fillerHighlightedSeconds": 0.0,
+        "usefulOmittedFromHighlightsSeconds": 3.200000000000003,
+        "usefulMarkedSkipSeconds": 0.0,
+        "mixedMarkedSkipSeconds": 0.0,
+        "unknownReferenceHighlightedSeconds": 0.0
+      },
+      "confusionSeconds": {
+        "keep": {
+          "keep": 104.0,
+          "context": 3.200000000000003,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "context": {
+          "keep": 0.0,
+          "context": 3.8400000000000034,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "skip": {
+          "keep": 0.0,
+          "context": 15.64,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "unknown": {
+          "keep": 0.0,
+          "context": 0.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        }
+      },
+      "analysisId": "fbf46b6a0d91dcffe7a06d165a575aca5e8a62497ffdef90d9c5dc3fa356d25b",
+      "cached": false,
+      "elapsedSeconds": 0.327,
+      "segments": [
+        {
+          "start": 0,
+          "end": 0.32,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 0.32,
+          "end": 25.84,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 25.84,
+          "end": 51.84,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 51.84,
+          "end": 77.6,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 77.6,
+          "end": 104.32,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 104.32,
+          "end": 127,
+          "kind": "context",
+          "confidence": "low",
+          "title": "Useful explanation",
+          "reason": "Useful speech may be mixed with promotion or housekeeping. Preserved for review.",
+          "autoSkipEligible": false
+        }
+      ]
+    },
+    {
+      "videoId": "7r4ikZHm9AI",
+      "title": "Anthropic researchers are quitting... and now we know why",
+      "channel": "Fireship",
+      "category": "AI discussion",
+      "duration": 376,
+      "language": "en",
+      "cueCount": 194,
+      "inputSha256": "eb8bb5cfcc05fe73dbf2eda40234d5cd4b081607de9bad0d3eb3f2c8a11f8370",
+      "url": "https://www.youtube.com/watch?v=7r4ikZHm9AI",
+      "reviewVerdict": "worth",
+      "worthVerdict": "selective",
+      "verdictMatch": false,
+      "totals": {
+        "keep": 259.79999999999995,
+        "skip": 0,
+        "context": 115.72000000000006,
+        "unknown": 0.47999999999996135
+      },
+      "captionCoveredSeconds": 375.52000000000004,
+      "metrics": {
+        "usefulCorrectSeconds": 238.31999999999996,
+        "usefulReferenceSeconds": 298.03999999999996,
+        "highlightedKnownSeconds": 259.79999999999995,
+        "usefulPrecision": 0.9173210161662818,
+        "usefulRecall": 0.7996242115152329,
+        "clearFillerSeconds": 12.199999999999989,
+        "clearFillerIdentifiedSeconds": 0.0,
+        "clearFillerRecall": 0.0,
+        "fillerHighlightedSeconds": 0.0,
+        "usefulOmittedFromHighlightsSeconds": 59.72,
+        "usefulMarkedSkipSeconds": 0.0,
+        "mixedMarkedSkipSeconds": 0.0,
+        "unknownReferenceHighlightedSeconds": 0.0
+      },
+      "confusionSeconds": {
+        "keep": {
+          "keep": 238.31999999999996,
+          "context": 59.72,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "context": {
+          "keep": 21.480000000000018,
+          "context": 43.80000000000001,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "skip": {
+          "keep": 0.0,
+          "context": 12.199999999999989,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "unknown": {
+          "keep": 0.0,
+          "context": 5.684341886080802e-14,
+          "skip": 0.0,
+          "unknown": 0.0
+        }
+      },
+      "analysisId": "d82f0f7eedc963a92cf3d36d0b98f55593b4aba05c7eb9074d2d1120a833c017",
+      "cached": false,
+      "elapsedSeconds": 1.144,
+      "segments": [
+        {
+          "start": 0,
+          "end": 25.4,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 25.4,
+          "end": 52.84,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Story or context",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 52.84,
+          "end": 79.2,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 79.2,
+          "end": 104.76,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 104.76,
+          "end": 131.04,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 131.04,
+          "end": 157.28,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 157.28,
+          "end": 182.76,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 182.76,
+          "end": 208.519,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 208.519,
+          "end": 234.72,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 234.72,
+          "end": 260.28,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 260.28,
+          "end": 286.36,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 286.36,
+          "end": 312.64,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 312.64,
+          "end": 338.2,
+          "kind": "context",
+          "confidence": "low",
+          "title": "Useful explanation",
+          "reason": "Useful speech may be mixed with promotion or housekeeping. Preserved for review.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 338.2,
+          "end": 363.32,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 363.32,
+          "end": 375.52000000000004,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 375.52000000000004,
+          "end": 376,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        }
+      ]
+    },
+    {
+      "videoId": "WrCjAAl9okA",
+      "title": "A $6.3 billion open-weight model just got embarrassed by the French...",
+      "channel": "Fireship",
+      "category": "AI discussion",
+      "duration": 370,
+      "language": "en",
+      "cueCount": 189,
+      "inputSha256": "0f2aa714fed7632dde052a922b891b668bff92d8276895b54439f4c436a96098",
+      "url": "https://www.youtube.com/watch?v=WrCjAAl9okA",
+      "reviewVerdict": "worth",
+      "worthVerdict": "worth",
+      "verdictMatch": true,
+      "totals": {
+        "keep": 259.99899999999997,
+        "skip": 0,
+        "context": 109.76100000000002,
+        "unknown": 0.24
+      },
+      "captionCoveredSeconds": 369.76,
+      "metrics": {
+        "usefulCorrectSeconds": 234.639,
+        "usefulReferenceSeconds": 313.36,
+        "highlightedKnownSeconds": 259.99899999999997,
+        "usefulPrecision": 0.9024611633121667,
+        "usefulRecall": 0.7487841460301251,
+        "clearFillerSeconds": 11.120000000000005,
+        "clearFillerIdentifiedSeconds": 0.0,
+        "clearFillerRecall": 0.0,
+        "fillerHighlightedSeconds": 4.079999999999984,
+        "usefulOmittedFromHighlightsSeconds": 78.721,
+        "usefulMarkedSkipSeconds": 0.0,
+        "mixedMarkedSkipSeconds": 0.0,
+        "unknownReferenceHighlightedSeconds": 0.0
+      },
+      "confusionSeconds": {
+        "keep": {
+          "keep": 234.639,
+          "context": 78.721,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "context": {
+          "keep": 21.279999999999973,
+          "context": 24.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "skip": {
+          "keep": 4.079999999999984,
+          "context": 7.0400000000000205,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "unknown": {
+          "keep": 0.0,
+          "context": 0.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        }
+      },
+      "analysisId": "fbcfa8e4f2c832970c4564552ac6de49ec365840ba64711041b086664050145f",
+      "cached": false,
+      "elapsedSeconds": 1.075,
+      "segments": [
+        {
+          "start": 0,
+          "end": 0.24,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 0.24,
+          "end": 26.08,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 26.08,
+          "end": 53.039,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 53.039,
+          "end": 78.4,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 78.4,
+          "end": 103.84,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 103.84,
+          "end": 129.44,
+          "kind": "context",
+          "confidence": "low",
+          "title": "Story or context",
+          "reason": "The classifier is uncertain. Keep this passage available for context.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 129.44,
+          "end": 155.84,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 155.84,
+          "end": 182.56,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 182.56,
+          "end": 208.64,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 208.64,
+          "end": 233.92,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 233.92,
+          "end": 260,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 260,
+          "end": 285.6,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 285.6,
+          "end": 311.759,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 311.759,
+          "end": 337.6,
+          "kind": "context",
+          "confidence": "low",
+          "title": "Useful explanation",
+          "reason": "Useful speech may be mixed with promotion or housekeeping. Preserved for review.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 337.6,
+          "end": 362.96,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 362.96,
+          "end": 370,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        }
+      ]
+    },
+    {
+      "videoId": "z19HM7ANZlo",
+      "title": "The M4 Mac Mini is Incredible!",
+      "channel": "Marques Brownlee",
+      "category": "review",
+      "duration": 705,
+      "language": "en",
+      "cueCount": 291,
+      "inputSha256": "1a0dd3f601cdb63e287a1d8c694f132b08583728aa7afd91fa303b8c1e4fbba7",
+      "url": "https://www.youtube.com/watch?v=z19HM7ANZlo",
+      "reviewVerdict": "worth",
+      "worthVerdict": "worth",
+      "verdictMatch": true,
+      "totals": {
+        "keep": 642.8289999999979,
+        "skip": 10.142999999999802,
+        "context": 32.56699999999998,
+        "unknown": 19.461000000002333
+      },
+      "captionCoveredSeconds": 685.5389999999977,
+      "metrics": {
+        "usefulCorrectSeconds": 631.2649999999978,
+        "usefulReferenceSeconds": 660.1179999999978,
+        "highlightedKnownSeconds": 634.9019999999978,
+        "usefulPrecision": 0.9942715568701942,
+        "usefulRecall": 0.9562911479462762,
+        "clearFillerSeconds": 7.743999999999858,
+        "clearFillerIdentifiedSeconds": 4.106999999999857,
+        "clearFillerRecall": 0.5303460743801566,
+        "fillerHighlightedSeconds": 3.6370000000000005,
+        "usefulOmittedFromHighlightsSeconds": 28.852999999999952,
+        "usefulMarkedSkipSeconds": 2.4529999999999745,
+        "mixedMarkedSkipSeconds": 0.0,
+        "unknownReferenceHighlightedSeconds": 7.926999999999999
+      },
+      "confusionSeconds": {
+        "keep": {
+          "keep": 631.2649999999978,
+          "context": 26.399999999999977,
+          "skip": 2.4529999999999745,
+          "unknown": 0.0
+        },
+        "context": {
+          "keep": 0.0,
+          "context": 0.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "skip": {
+          "keep": 3.6370000000000005,
+          "context": 0.0,
+          "skip": 4.106999999999857,
+          "unknown": 0.0
+        },
+        "unknown": {
+          "keep": 7.926999999999999,
+          "context": 6.167,
+          "skip": 3.58299999999997,
+          "unknown": 0.0
+        }
+      },
+      "analysisId": "192cd906ee4d61da18b10e5f0b7bc3300494713e0a4f430e1b9b27b693a788b2",
+      "cached": false,
+      "elapsedSeconds": 1.896,
+      "segments": [
+        {
+          "start": 0,
+          "end": 0.29,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 0.29,
+          "end": 8.216999999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 8.216999999999999,
+          "end": 11.207,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 11.207,
+          "end": 13.874,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 13.874,
+          "end": 20.445,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 20.445,
+          "end": 23.945,
+          "kind": "context",
+          "confidence": "low",
+          "title": "Greeting or outro",
+          "reason": "The classifier is uncertain. Keep this passage available for context.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 23.945,
+          "end": 25.89,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 25.89,
+          "end": 48.38999999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 48.38999999999999,
+          "end": 48.39,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 48.39,
+          "end": 52.86,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 52.86,
+          "end": 54.269999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 54.269999999999996,
+          "end": 54.27,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 54.27,
+          "end": 58.559999999999995,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 58.559999999999995,
+          "end": 58.56,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 58.56,
+          "end": 78.18,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 78.18,
+          "end": 98.57,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 98.57,
+          "end": 98.79,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 98.79,
+          "end": 103.16999999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 103.16999999999999,
+          "end": 103.17,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 103.17,
+          "end": 105.51,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 105.51,
+          "end": 119.39999999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 119.39999999999999,
+          "end": 119.4,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 119.4,
+          "end": 132.09,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 132.09,
+          "end": 151.82999999999998,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 151.82999999999998,
+          "end": 151.83,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 151.83,
+          "end": 156.17999999999998,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 156.17999999999998,
+          "end": 156.18,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 156.18,
+          "end": 158.58,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 158.58,
+          "end": 177.153,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 177.153,
+          "end": 178.02,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 178.02,
+          "end": 185.57999999999998,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 185.57999999999998,
+          "end": 185.58,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 185.58,
+          "end": 192.5,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 192.5,
+          "end": 192.81,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 192.81,
+          "end": 211.14,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 211.14,
+          "end": 212.45999999999998,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 212.45999999999998,
+          "end": 212.46,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 212.46,
+          "end": 227.613,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 227.613,
+          "end": 228.69,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 228.69,
+          "end": 242.45999999999998,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 242.45999999999998,
+          "end": 242.46,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 242.46,
+          "end": 247.46,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 247.46,
+          "end": 248.1,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 248.1,
+          "end": 255.14999999999998,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 255.14999999999998,
+          "end": 255.15,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 255.15,
+          "end": 262.16999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 262.16999999999996,
+          "end": 262.17,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 262.17,
+          "end": 265.22999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 265.22999999999996,
+          "end": 265.23,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 265.23,
+          "end": 274.16999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 274.16999999999996,
+          "end": 274.17,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 274.17,
+          "end": 281.15999999999997,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 281.15999999999997,
+          "end": 281.16,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 281.16,
+          "end": 301.04999999999995,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 301.04999999999995,
+          "end": 301.05,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 301.05,
+          "end": 306.3,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 306.3,
+          "end": 317.15999999999997,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 317.15999999999997,
+          "end": 317.16,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 317.16,
+          "end": 325.91999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 325.91999999999996,
+          "end": 325.92,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 325.92,
+          "end": 329.90999999999997,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 329.90999999999997,
+          "end": 329.91,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 329.91,
+          "end": 331.44,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 331.44,
+          "end": 349.04999999999995,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 349.04999999999995,
+          "end": 349.05,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 349.05,
+          "end": 358.56,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 358.56,
+          "end": 385.16999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 385.16999999999996,
+          "end": 385.17,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 385.17,
+          "end": 411.21,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 411.21,
+          "end": 413.72999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 413.72999999999996,
+          "end": 413.73,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 413.73,
+          "end": 419.96999999999997,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 419.96999999999997,
+          "end": 419.97,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 419.97,
+          "end": 437.07,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 437.07,
+          "end": 440.78999999999996,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 440.78999999999996,
+          "end": 440.79,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 440.79,
+          "end": 463.47,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 463.47,
+          "end": 468.53999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 468.53999999999996,
+          "end": 468.54,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 468.54,
+          "end": 480.23,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 480.23,
+          "end": 480.45,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 480.45,
+          "end": 490.65,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 490.65,
+          "end": 510.41999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 510.41999999999996,
+          "end": 510.42,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 510.42,
+          "end": 516.3,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 516.3,
+          "end": 519.8629999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 519.8629999999999,
+          "end": 519.863,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 519.863,
+          "end": 541.5,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 541.5,
+          "end": 558.9599999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 558.9599999999999,
+          "end": 558.96,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 558.96,
+          "end": 562.4399999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 562.4399999999999,
+          "end": 562.44,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 562.44,
+          "end": 567.42,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 567.42,
+          "end": 569.8199999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 569.8199999999999,
+          "end": 569.82,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 569.82,
+          "end": 583.3199999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 583.3199999999999,
+          "end": 583.32,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 583.32,
+          "end": 594.15,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 594.15,
+          "end": 619.77,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 619.77,
+          "end": 631.5899999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 631.5899999999999,
+          "end": 631.59,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 631.59,
+          "end": 645.42,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 645.42,
+          "end": 647.3399999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 647.3399999999999,
+          "end": 647.34,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 647.34,
+          "end": 649.36,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 649.36,
+          "end": 650.34,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 650.34,
+          "end": 654.4799999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 654.4799999999999,
+          "end": 654.48,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 654.48,
+          "end": 659.9399999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 659.9399999999999,
+          "end": 659.94,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 659.94,
+          "end": 670.98,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 670.98,
+          "end": 687.513,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 687.513,
+          "end": 688.47,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 688.47,
+          "end": 692.463,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 692.463,
+          "end": 693.54,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 693.54,
+          "end": 694.3729999999999,
+          "kind": "skip",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Explicit promotion or housekeeping; both parts contain no classified lesson.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 694.3729999999999,
+          "end": 695.22,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 695.22,
+          "end": 700.9469999999999,
+          "kind": "skip",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Explicit promotion or housekeeping; both parts contain no classified lesson.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 700.9469999999999,
+          "end": 700.947,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 700.947,
+          "end": 704.53,
+          "kind": "skip",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Explicit promotion or housekeeping; both parts contain no classified lesson.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 704.53,
+          "end": 705,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        }
+      ]
+    },
+    {
+      "videoId": "rng_yUSwrgU",
+      "title": "iPhone 17 Review: No Asterisks!",
+      "channel": "Marques Brownlee",
+      "category": "review",
+      "duration": 680,
+      "language": "en",
+      "cueCount": 299,
+      "inputSha256": "40baa0bf3cf20c95f8115a0e5e4d6aab22ee5a27f277d04b9e4abf74da0f38fe",
+      "url": "https://www.youtube.com/watch?v=rng_yUSwrgU",
+      "reviewVerdict": "worth",
+      "worthVerdict": "worth",
+      "verdictMatch": true,
+      "totals": {
+        "keep": 499.921,
+        "skip": 0,
+        "context": 171.96800000000002,
+        "unknown": 8.110999999999981
+      },
+      "captionCoveredSeconds": 671.889,
+      "metrics": {
+        "usefulCorrectSeconds": 490.08099999999996,
+        "usefulReferenceSeconds": 647.2800000000001,
+        "highlightedKnownSeconds": 499.92099999999994,
+        "usefulPrecision": 0.9803168900686309,
+        "usefulRecall": 0.7571391051785933,
+        "clearFillerSeconds": 4.059999999999945,
+        "clearFillerIdentifiedSeconds": 0.0,
+        "clearFillerRecall": 0.0,
+        "fillerHighlightedSeconds": 0.0,
+        "usefulOmittedFromHighlightsSeconds": 157.19900000000013,
+        "usefulMarkedSkipSeconds": 0.0,
+        "mixedMarkedSkipSeconds": 0.0,
+        "unknownReferenceHighlightedSeconds": 0.0
+      },
+      "confusionSeconds": {
+        "keep": {
+          "keep": 490.08099999999996,
+          "context": 157.1990000000001,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "context": {
+          "keep": 9.840000000000003,
+          "context": 3.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "skip": {
+          "keep": 0.0,
+          "context": 4.059999999999945,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "unknown": {
+          "keep": 0.0,
+          "context": 7.709000000000005,
+          "skip": 0.0,
+          "unknown": 0.0
+        }
+      },
+      "analysisId": "f885467a0627a862640266773a02446498eb1c447fea9756401697a1872fa2bd",
+      "cached": false,
+      "elapsedSeconds": 1.812,
+      "segments": [
+        {
+          "start": 0,
+          "end": 0.72,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 0.72,
+          "end": 3.8890000000000002,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Story or context",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 3.8890000000000002,
+          "end": 6.26,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 6.26,
+          "end": 32.719,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 32.719,
+          "end": 57.76,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 57.76,
+          "end": 68.519,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 68.519,
+          "end": 69.36,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 69.36,
+          "end": 80.28,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 80.28,
+          "end": 80.64,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 80.64,
+          "end": 85.759,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 85.759,
+          "end": 113.119,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 113.119,
+          "end": 124.68,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 124.68,
+          "end": 127.119,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 127.119,
+          "end": 153.04,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 153.04,
+          "end": 178.64,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 178.64,
+          "end": 205.04,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 205.04,
+          "end": 231.76,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 231.76,
+          "end": 258,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 258,
+          "end": 284.56,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 284.56,
+          "end": 310.08,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 310.08,
+          "end": 335.52,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 335.52,
+          "end": 361.759,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 361.759,
+          "end": 390,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 390,
+          "end": 416.4,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 416.4,
+          "end": 442.96,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 442.96,
+          "end": 468.72,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 468.72,
+          "end": 494.08,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 494.08,
+          "end": 520.08,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 520.08,
+          "end": 546,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 546,
+          "end": 571.36,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 571.36,
+          "end": 598.08,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 598.08,
+          "end": 625.12,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 625.12,
+          "end": 652,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 652,
+          "end": 678.62,
+          "kind": "context",
+          "confidence": "low",
+          "title": "Useful explanation",
+          "reason": "Useful speech may be mixed with promotion or housekeeping. Preserved for review.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 678.62,
+          "end": 680,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        }
+      ]
+    },
+    {
+      "videoId": "PeMlggyqz0Y",
+      "title": "Machine Learning Explained in 100 Seconds",
+      "channel": "Fireship",
+      "category": "explainer",
+      "duration": 154,
+      "language": "en",
+      "cueCount": 78,
+      "inputSha256": "aa50375e8314103b76bfa0f083d34bd0aaf71ee4bc09819888d3de675284c165",
+      "url": "https://www.youtube.com/watch?v=PeMlggyqz0Y",
+      "reviewVerdict": "worth",
+      "worthVerdict": "selective",
+      "verdictMatch": false,
+      "totals": {
+        "keep": 104.19999999999999,
+        "skip": 0,
+        "context": 49.68000000000001,
+        "unknown": 0.12
+      },
+      "captionCoveredSeconds": 153.88,
+      "metrics": {
+        "usefulCorrectSeconds": 104.19999999999999,
+        "usefulReferenceSeconds": 141.56,
+        "highlightedKnownSeconds": 104.19999999999999,
+        "usefulPrecision": 1.0,
+        "usefulRecall": 0.7360836394461712,
+        "clearFillerSeconds": 8.439999999999998,
+        "clearFillerIdentifiedSeconds": 0.0,
+        "clearFillerRecall": 0.0,
+        "fillerHighlightedSeconds": 0.0,
+        "usefulOmittedFromHighlightsSeconds": 37.360000000000014,
+        "usefulMarkedSkipSeconds": 0.0,
+        "mixedMarkedSkipSeconds": 0.0,
+        "unknownReferenceHighlightedSeconds": 0.0
+      },
+      "confusionSeconds": {
+        "keep": {
+          "keep": 104.19999999999999,
+          "context": 37.360000000000014,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "context": {
+          "keep": 0.0,
+          "context": 3.8799999999999955,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "skip": {
+          "keep": 0.0,
+          "context": 8.439999999999998,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "unknown": {
+          "keep": 0.0,
+          "context": 0.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        }
+      },
+      "analysisId": "03508f42f53018532ccf08781f9df02eac27ca7732213bfadfc55ef6e975687a",
+      "cached": false,
+      "elapsedSeconds": 0.406,
+      "segments": [
+        {
+          "start": 0,
+          "end": 0.12,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 0.12,
+          "end": 25.359,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 25.359,
+          "end": 51.239,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 51.239,
+          "end": 78.24,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 78.24,
+          "end": 104.399,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 104.399,
+          "end": 130.2,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 130.2,
+          "end": 154,
+          "kind": "context",
+          "confidence": "low",
+          "title": "Useful explanation",
+          "reason": "Useful speech may be mixed with promotion or housekeeping. Preserved for review.",
+          "autoSkipEligible": false
+        }
+      ]
+    },
+    {
+      "videoId": "aircAruvnKk",
+      "title": "But what is a neural network? | Deep learning chapter 1",
+      "channel": "3Blue1Brown",
+      "category": "explainer",
+      "duration": 1120,
+      "language": "en",
+      "cueCount": 286,
+      "inputSha256": "bbc0fba3a9ccd84e2c860dc5403483a8ad7db30028300ce1cda8153ced78a1d7",
+      "url": "https://www.youtube.com/watch?v=aircAruvnKk",
+      "reviewVerdict": "worth",
+      "worthVerdict": "worth",
+      "verdictMatch": true,
+      "totals": {
+        "keep": 909.7729999999981,
+        "skip": 0,
+        "context": 79.84799999999989,
+        "unknown": 130.37900000000204
+      },
+      "captionCoveredSeconds": 989.6209999999979,
+      "metrics": {
+        "usefulCorrectSeconds": 898.7529999999982,
+        "usefulReferenceSeconds": 946.3409999999981,
+        "highlightedKnownSeconds": 909.7729999999981,
+        "usefulPrecision": 0.9878870883176354,
+        "usefulRecall": 0.9497136867154652,
+        "clearFillerSeconds": 11.17999999999995,
+        "clearFillerIdentifiedSeconds": 0.0,
+        "clearFillerRecall": 0.0,
+        "fillerHighlightedSeconds": 0.0,
+        "usefulOmittedFromHighlightsSeconds": 47.58799999999985,
+        "usefulMarkedSkipSeconds": 0.0,
+        "mixedMarkedSkipSeconds": 0.0,
+        "unknownReferenceHighlightedSeconds": 0.0
+      },
+      "confusionSeconds": {
+        "keep": {
+          "keep": 898.7529999999982,
+          "context": 47.587999999999894,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "context": {
+          "keep": 11.019999999999868,
+          "context": 21.08000000000004,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "skip": {
+          "keep": 0.0,
+          "context": 11.17999999999995,
+          "skip": 0.0,
+          "unknown": 0.0
+        },
+        "unknown": {
+          "keep": 0.0,
+          "context": 0.0,
+          "skip": 0.0,
+          "unknown": 0.0
+        }
+      },
+      "analysisId": "3ece58bbd8691f58d4a253004dea77d4f2a71f058d65bf54a54f59e8ab9b575d",
+      "cached": false,
+      "elapsedSeconds": 2.279,
+      "segments": [
+        {
+          "start": 0,
+          "end": 4.22,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 4.22,
+          "end": 5.3999999999999995,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 5.3999999999999995,
+          "end": 6.06,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 6.06,
+          "end": 13.719999999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 13.719999999999999,
+          "end": 14.34,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 14.34,
+          "end": 18.96,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 18.96,
+          "end": 19.7,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 19.7,
+          "end": 28.32,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 28.32,
+          "end": 28.9,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 28.9,
+          "end": 32.948,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 32.948,
+          "end": 36.94,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 36.94,
+          "end": 37.52,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 37.52,
+          "end": 48.34,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 48.34,
+          "end": 49.22,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 49.22,
+          "end": 59.135,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 59.135,
+          "end": 66.18,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 66.18,
+          "end": 67.16,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 67.16,
+          "end": 74.64,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 74.64,
+          "end": 75.12,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 75.12,
+          "end": 84.46,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 84.46,
+          "end": 85.02,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 85.02,
+          "end": 94.34,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 94.34,
+          "end": 95.36,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 95.36,
+          "end": 100.25999999999999,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 100.25999999999999,
+          "end": 100.96,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 100.96,
+          "end": 103.27799999999999,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 103.27799999999999,
+          "end": 103.278,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 103.278,
+          "end": 106.04,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 106.04,
+          "end": 109.36,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 109.36,
+          "end": 123.08,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 123.08,
+          "end": 125.04,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 125.04,
+          "end": 139.18,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 139.18,
+          "end": 139.86,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 139.86,
+          "end": 148.712,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 148.712,
+          "end": 149.12,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 149.12,
+          "end": 153.195,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 153.195,
+          "end": 156.51999999999998,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 156.51999999999998,
+          "end": 157.48,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 157.48,
+          "end": 162.28,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 162.28,
+          "end": 163.38,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 163.38,
+          "end": 168.5,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 168.5,
+          "end": 168.52,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 168.52,
+          "end": 171.66,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 171.66,
+          "end": 172.5,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 172.5,
+          "end": 180.44,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 180.44,
+          "end": 180.68,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 180.68,
+          "end": 182.56,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 182.56,
+          "end": 183.78,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 183.78,
+          "end": 194.22,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 194.22,
+          "end": 194.7,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 194.7,
+          "end": 204.38,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 204.38,
+          "end": 205.3,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 205.3,
+          "end": 212.60299999999998,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 212.60299999999998,
+          "end": 212.603,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 212.603,
+          "end": 214.16,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 214.16,
+          "end": 216.72,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 216.72,
+          "end": 221.85999999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 221.85999999999999,
+          "end": 226.5,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 226.5,
+          "end": 231.35999999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 231.35999999999999,
+          "end": 232.04,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 232.04,
+          "end": 236.61599999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 236.61599999999999,
+          "end": 236.616,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 236.616,
+          "end": 242.12,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 242.12,
+          "end": 243.04,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 243.04,
+          "end": 253.6,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 253.6,
+          "end": 254.26,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 254.26,
+          "end": 260.56,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 260.56,
+          "end": 261.02,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 261.02,
+          "end": 268.2,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 268.2,
+          "end": 268.78,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 268.78,
+          "end": 272.34,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 272.34,
+          "end": 273.02,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 273.02,
+          "end": 278.47999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 278.47999999999996,
+          "end": 279.2,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 279.2,
+          "end": 283.811,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 283.811,
+          "end": 288.21299999999997,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 288.21299999999997,
+          "end": 288.213,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 288.213,
+          "end": 288.713,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 288.713,
+          "end": 289.14,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 289.14,
+          "end": 297.18,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 297.18,
+          "end": 298.12,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 298.12,
+          "end": 303.40000000000003,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 303.40000000000003,
+          "end": 303.64,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 303.64,
+          "end": 311.551,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 311.551,
+          "end": 318.93899999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 318.93899999999996,
+          "end": 318.939,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 318.939,
+          "end": 322.08000000000004,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 322.08000000000004,
+          "end": 322.56,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 322.56,
+          "end": 329.4,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 329.4,
+          "end": 332.56,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 332.56,
+          "end": 343.52000000000004,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 343.52000000000004,
+          "end": 344.06,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 344.06,
+          "end": 345.22,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 345.22,
+          "end": 345.4,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 345.4,
+          "end": 347.59999999999997,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 347.59999999999997,
+          "end": 348.92,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 348.92,
+          "end": 353.52000000000004,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 353.52000000000004,
+          "end": 354.2,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 354.2,
+          "end": 356.82,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 356.82,
+          "end": 357.38,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 357.38,
+          "end": 361.18,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 361.18,
+          "end": 361.98,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 361.98,
+          "end": 366.82,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 366.82,
+          "end": 367.6,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 367.6,
+          "end": 374.992,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 374.992,
+          "end": 383.78,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 383.78,
+          "end": 384.5,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 384.5,
+          "end": 391.56,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 391.56,
+          "end": 392.44,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 392.44,
+          "end": 400.03999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 400.03999999999996,
+          "end": 401,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 401,
+          "end": 407.64,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 407.64,
+          "end": 408.06,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 408.06,
+          "end": 413.06,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 413.06,
+          "end": 413.68,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 413.68,
+          "end": 416.68,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 416.68,
+          "end": 417.28,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 417.28,
+          "end": 419.89099999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 419.89099999999996,
+          "end": 419.891,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 419.891,
+          "end": 422.78000000000003,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 422.78000000000003,
+          "end": 423.78,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 423.78,
+          "end": 428.399,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 428.399,
+          "end": 434.32,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 434.32,
+          "end": 435.14,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 435.14,
+          "end": 442.71999999999997,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 442.71999999999997,
+          "end": 443.54,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 443.54,
+          "end": 455.156,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 455.156,
+          "end": 459.72,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 459.72,
+          "end": 460.68,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 460.68,
+          "end": 471.98999999999995,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 471.98999999999995,
+          "end": 471.99,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 471.99,
+          "end": 472.54,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 472.54,
+          "end": 473.16,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 473.16,
+          "end": 480.29999999999995,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 480.29999999999995,
+          "end": 480.88,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 480.88,
+          "end": 487.28,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 487.28,
+          "end": 488.04,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 488.04,
+          "end": 500.06,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 500.06,
+          "end": 501.1,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 501.1,
+          "end": 509.91999999999996,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 509.91999999999996,
+          "end": 510.86,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 510.86,
+          "end": 518.98,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 518.98,
+          "end": 519.44,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 519.44,
+          "end": 526.914,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 526.914,
+          "end": 530.62,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 530.62,
+          "end": 531.44,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 531.44,
+          "end": 535.1,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 535.1,
+          "end": 535.64,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 535.64,
+          "end": 547.78,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 547.78,
+          "end": 548.72,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 548.72,
+          "end": 555.56,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 555.56,
+          "end": 556.32,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 556.32,
+          "end": 557.7,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 557.7,
+          "end": 558.54,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 558.54,
+          "end": 561.8979999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 561.8979999999999,
+          "end": 561.898,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 561.898,
+          "end": 565.5,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 565.5,
+          "end": 567.7,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 567.7,
+          "end": 574.6419999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 574.6419999999999,
+          "end": 574.642,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 574.642,
+          "end": 581.7800000000001,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 581.7800000000001,
+          "end": 582.78,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 582.78,
+          "end": 586.5269999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 586.5269999999999,
+          "end": 586.527,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 586.527,
+          "end": 593.865,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 593.865,
+          "end": 597.82,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Possible promotion",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 597.82,
+          "end": 599.14,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 599.14,
+          "end": 602.3919999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 602.3919999999999,
+          "end": 602.392,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 602.392,
+          "end": 606.6,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 606.6,
+          "end": 607.48,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 607.48,
+          "end": 612.7,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 612.7,
+          "end": 614.26,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 614.26,
+          "end": 618.6469999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 618.6469999999999,
+          "end": 618.647,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 618.647,
+          "end": 623.5400000000001,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 623.5400000000001,
+          "end": 624.12,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 624.12,
+          "end": 632.14,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 632.14,
+          "end": 632.46,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 632.46,
+          "end": 637.42,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 637.42,
+          "end": 638,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 638,
+          "end": 643.351,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 643.351,
+          "end": 646.6,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 646.6,
+          "end": 649.12,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 649.12,
+          "end": 656.3599999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 656.3599999999999,
+          "end": 657.54,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 657.54,
+          "end": 661.88,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 661.88,
+          "end": 662.28,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 662.28,
+          "end": 666.36,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 666.36,
+          "end": 666.84,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 666.84,
+          "end": 670.26,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 670.26,
+          "end": 671.38,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 671.38,
+          "end": 679.66,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 679.66,
+          "end": 680.58,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 680.58,
+          "end": 682.44,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 682.44,
+          "end": 683.46,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 683.46,
+          "end": 695.18,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 695.18,
+          "end": 696.12,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 696.12,
+          "end": 697.68,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 697.68,
+          "end": 698.28,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 698.28,
+          "end": 710.94,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 710.94,
+          "end": 711.6,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 711.6,
+          "end": 717.6,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 717.6,
+          "end": 718.11,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 718.11,
+          "end": 719.54,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 719.54,
+          "end": 719.96,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 719.96,
+          "end": 727.98,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 727.98,
+          "end": 728.84,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 728.84,
+          "end": 731.94,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 731.94,
+          "end": 732.52,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 732.52,
+          "end": 737.34,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 737.34,
+          "end": 738.34,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 738.34,
+          "end": 747.0649999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 747.0649999999999,
+          "end": 747.065,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 747.065,
+          "end": 749.96,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 749.96,
+          "end": 751.04,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 751.04,
+          "end": 757.6469999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 757.6469999999999,
+          "end": 757.647,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 757.647,
+          "end": 761.36,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 761.36,
+          "end": 762.62,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 762.62,
+          "end": 776.5799999999999,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 776.5799999999999,
+          "end": 776.98,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 776.98,
+          "end": 789.025,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 789.025,
+          "end": 794.1800000000001,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 794.1800000000001,
+          "end": 794.96,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 794.96,
+          "end": 805.82,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 805.82,
+          "end": 806.84,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 806.84,
+          "end": 810.68,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 810.68,
+          "end": 812.5,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 812.5,
+          "end": 817.14,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 817.14,
+          "end": 817.66,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 817.66,
+          "end": 828.023,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 828.023,
+          "end": 828.357,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 828.357,
+          "end": 838,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 838,
+          "end": 838.54,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 838.54,
+          "end": 842.2139999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 842.2139999999999,
+          "end": 842.214,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 842.214,
+          "end": 849.88,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 849.88,
+          "end": 854,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 854,
+          "end": 868.5999999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 868.5999999999999,
+          "end": 869.24,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 869.24,
+          "end": 882.3,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 882.3,
+          "end": 883.28,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 883.28,
+          "end": 894.74,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 894.74,
+          "end": 895.94,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 895.94,
+          "end": 905.4079999999999,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 905.4079999999999,
+          "end": 905.408,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 905.408,
+          "end": 915.66,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 915.66,
+          "end": 917.82,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 917.82,
+          "end": 921.46,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 921.46,
+          "end": 922.22,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 922.22,
+          "end": 938.34,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 938.34,
+          "end": 939.2,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 939.2,
+          "end": 943.13,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 943.13,
+          "end": 947.06,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 947.06,
+          "end": 947.56,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 947.56,
+          "end": 955.4159999999999,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 955.4159999999999,
+          "end": 955.416,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 955.416,
+          "end": 962.64,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 962.64,
+          "end": 963.4,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 963.4,
+          "end": 966.66,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 966.66,
+          "end": 967.34,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 967.34,
+          "end": 969.701,
+          "kind": "context",
+          "confidence": "medium",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 969.701,
+          "end": 972.28,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 972.28,
+          "end": 973.34,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 973.34,
+          "end": 974.7,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 974.7,
+          "end": 975.08,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 975.08,
+          "end": 979.36,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 979.36,
+          "end": 980.14,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 980.14,
+          "end": 986.12,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 986.12,
+          "end": 987.58,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 987.58,
+          "end": 997.4200000000001,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 997.4200000000001,
+          "end": 998.02,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 998.02,
+          "end": 1007.88,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1007.88,
+          "end": 1008.56,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1008.56,
+          "end": 1009.9399999999999,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1009.9399999999999,
+          "end": 1010.76,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1010.76,
+          "end": 1013.5,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1013.5,
+          "end": 1014,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1014,
+          "end": 1021.9,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1021.9,
+          "end": 1023.6,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1023.6,
+          "end": 1030.7169999999999,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1030.7169999999999,
+          "end": 1030.717,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1030.717,
+          "end": 1034.6200000000001,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1034.6200000000001,
+          "end": 1035.46,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1035.46,
+          "end": 1039.1200000000001,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1039.1200000000001,
+          "end": 1039.7,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1039.7,
+          "end": 1049.84,
+          "kind": "keep",
+          "confidence": "medium",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1049.84,
+          "end": 1050.28,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1050.28,
+          "end": 1054.04,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1054.04,
+          "end": 1054.32,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1054.32,
+          "end": 1058.98,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1058.98,
+          "end": 1059.4,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1059.4,
+          "end": 1062.3400000000001,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1062.3400000000001,
+          "end": 1062.68,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1062.68,
+          "end": 1076.57,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1076.57,
+          "end": 1090.84,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1090.84,
+          "end": 1091.16,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1091.16,
+          "end": 1104.6200000000001,
+          "kind": "keep",
+          "confidence": "high",
+          "title": "Useful explanation",
+          "reason": "Explains the topic or provides a meaningful assessment.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1104.6200000000001,
+          "end": 1105.1,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1105.1,
+          "end": 1105.6399999999999,
+          "kind": "context",
+          "confidence": "high",
+          "title": "Greeting or outro",
+          "reason": "Preserved context; content type alone does not make a passage filler.",
+          "autoSkipEligible": false
+        },
+        {
+          "start": 1105.6399999999999,
+          "end": 1120,
+          "kind": "unknown",
+          "confidence": "low",
+          "title": "Unknown interval",
+          "reason": "No complete transcript analysis covers this interval.",
+          "autoSkipEligible": false
+        }
+      ]
+    }
+  ]
+}

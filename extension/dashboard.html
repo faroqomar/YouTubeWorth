@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="local-pair" content="__PAIR_TOKEN__"><title>Worth — Settings</title><link rel="stylesheet" href="dashboard.css"></head>
+<body><main>
+<header><a class="brand" href="#" aria-label="Worth settings"><span aria-hidden="true">↗</span> Worth</a><div class="service"><span id="health-dot" class="dot"></span><span id="health">Checking local service…</span><a href="http://127.0.0.1:4318/setup" target="_blank" rel="noreferrer">Local service ↗</a></div></header>
+<div class="heading"><span class="eyebrow">YOUR VIEWING PREFERENCES</span><h1>Keep what matters.</h1><p>Useful explanations, examples and opinions stay in view.<br>Uncertain passages stay available for context.</p></div>
+<div class="toolbar"><label for="search" class="sr-only">Find a setting</label><input id="search" type="search" placeholder="Find a setting…"><div class="transfer"><button id="export" type="button">Export</button><label class="import" for="import">Import</label><input id="import" class="file-input" type="file" accept="application/json,.json"></div></div>
+<form id="rules-form" novalidate>
+<div id="main-settings" class="surface"></div>
+<p class="note">Identifying filler does not turn on automatic skipping. Playback stays in your control.</p>
+<details id="advanced"><summary><span>Advanced</span><small>Captions, analysis, source checks and retention</small></summary><div id="reliability" role="status"></div><div id="catalog"></div></details>
+<p id="empty" hidden>No matching settings. Try “captions”, “confidence” or “memory”.</p>
+</form>
+<section class="apply-note"><h2>When changes take effect</h2><p>Player highlights update when Worth next opens, using existing judgments. Analysis and source-check settings require reanalysis. A running job finishes with the settings it started with.</p></section>
+<footer><span>Laya · on your device</span><span>English captions preferred · no translation required</span></footer>
+</main>
+<div class="save-bar"><div class="save-inner"><div class="save-status"><strong id="change-count">Loading settings…</strong><p id="status" role="status" aria-live="polite">Connecting to the local service.</p></div><div class="save-actions"><button id="reset" type="button">Restore defaults</button><button id="discard" type="button" disabled>Discard</button><button id="save" type="submit" form="rules-form" class="primary" disabled>Save changes</button></div></div></div>
+<script src="dashboard.js" type="module"></script></body></html>

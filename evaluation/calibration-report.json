@@ -1,0 +1,18 @@
+{
+  "sampleCount": 18,
+  "minimumTypeSamples": 10,
+  "minimumBucketSamples": 2000,
+  "fit": {
+    "temperature": [
+      1.0484927892684937,
+      1.0,
+      1.0
+    ],
+    "temperature_by_options": {},
+    "n_by_bucket": {
+      "choice:3-5": 18
+    }
+  },
+  "deployed": false,
+  "reason": "Single-video calibration does not establish generalization or reliable skip probabilities."
+}
