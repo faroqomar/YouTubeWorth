@@ -33,3 +33,11 @@ The server intersects each judgment with the union of caption ranges and fills e
 ## Reliability status
 
 The selected experimental five-choice question failed the held-out checks. See [testing](testing.md). Production retains the four-choice fallback, checkpoint-default uncalibrated probabilities and a false release gate. No automatic skipping is currently eligible. This is a conservative behavior release, not a verified accuracy improvement. Recommended settings still expose usefulness suggestions and manual timestamps. Custom questions/thresholds remain explicitly unvalidated. A future passed release needs new independent evidence before enabling automatic skipping.
+
+## Filler validation and inference efficiency (2026-11-15)
+
+Implemented: filler requires two nonempty cue groups and the same category in the whole excerpt and both parts. Single-cue candidates remain context because repeating the whole-excerpt question does not validate independent parts. Disabled categories and truncated excerpts do not trigger filler follow-up calls. Validation stops at the first mismatch, uncertainty or truncation. This can preserve more material as context; it does not establish classifier accuracy.
+
+Claim extraction now checks for a usable verbatim quote before asking the factual-content question. Excerpts without a quote avoid that model call. Quote selection and confidence requirements remain unchanged. Classifier identity is now `worth-content-v3`, preventing reuse of results from the previous pipeline. The checkpoint, settings schema and false automatic-skip release gate remain unchanged.
+
+Verification uses synthetic text and controlled model responses, including inference call counts. No new live YouTube/Laya accuracy evaluation has been performed for these changes.

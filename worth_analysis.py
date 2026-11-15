@@ -86,17 +86,19 @@ def judge(agent, group, data, before='', after='', candidate=None):
     lexical=any(re.search(r'(?<!\w)'+re.escape(phrase.lower())+r'(?!\w)',text.lower()) for phrase in r['fillerWords'])
     # Explicit instructions in captions are data, never application instructions.
     caution=bool(re.search(r"\b(not|never|don't|doesn't|isn't|without|however|but|instead|because|for example|ignore .*instructions)\b",text,re.I))
-    if role in ('promotion','intro') and lexical and p>=r['skipConfidence'] and not caution:
-        allowed=r['skipPromotion'] if role=='promotion' else r['skipIntro']
+    allowed = (role=='promotion' and r['skipPromotion']) or (role=='intro' and r['skipIntro'])
+    if allowed and lexical and p>=r['skipConfidence'] and not caution and not truncated:
         # Test each half of candidate filler. A mixed lesson is retained as context.
         cue_parts=group.get('quotes',[text]);middle=max(1,len(cue_parts)//2)
         parts=[' '.join(cue_parts[:middle]),' '.join(cue_parts[middle:])]
-        pure=True
-        for part in filter(None,parts):
+        # A single cue has no independently timestamped parts; abstain.
+        pure=all(parts)
+        for part in parts if pure else []:
             sub=predict(agent,part,type_question(r,candidate),r)
             b=sub['answers']['type']
-            if b['choice'] not in ('advertisement','greeting') or b.get('answer_confidence',0)<r['skipConfidence'] or sub.get('usage',{}).get('truncated'):
+            if b['choice'] != a['choice'] or b.get('answer_confidence',0)<r['skipConfidence'] or sub.get('usage',{}).get('truncated'):
                 pure=False
+                break
         if allowed and pure:
             kind='skip';confidence='high';reason='Explicit promotion or housekeeping; both parts contain no classified lesson.'
     elif lexical and kind=='keep':
@@ -124,17 +126,19 @@ def classify(agent,data,job_id=None,cancelled=None,emit=lambda _:None,candidate=
         if r['skipRepetition'] and i and group['start']>=groups[i-1]['end'] and normalized(group['text'])==normalized(groups[i-1]['text']) and len(set(re.findall(r'\w+',group['text'].lower())))>=r['repetitionWords']:
             segment.update(kind='context',confidence='low',role='repetition',title='Exact repetition',reason='Matches the previous speech. Preserved because repetition may reinforce an explanation.')
         if facts_left and segment['kind'] in ('keep','context'):
-            question={'factual':{'type':'choice','instructions':r['factQuestion'],'criteria':{'fact':r['factChoice'],'opinion':r['opinionChoice'],'request':r['requestChoice']}}}
-            factual=predict(agent,group['text'],question,r);a=factual['answers']['factual']
-            if a['choice']=='fact' and a.get('answer_confidence',0)>=r['claimConfidence'] and not factual.get('usage',{}).get('truncated'):
-                sentences=[s.strip() for s in re.split(r'(?<=[.!?])\s+',group['text']) if r['claimMinChars']<=len(s.strip())<=r['claimMaxChars']]
-                if not sentences:
-                    quote=''
-                    for text in group['quotes']:
-                        if len(quote)+len(text)+1>min(r['quoteMaxChars'],r['claimMaxChars']):break
-                        quote+=(' ' if quote else '')+text
-                    if len(quote)>=r['quoteMinChars']:sentences=[quote]
-                if sentences:segment['claim']=max(sentences,key=len);facts_left-=1
+            # Extract first: do not spend an inference on text with no usable quote.
+            sentences=[s.strip() for s in re.split(r'(?<=[.!?])\s+',group['text']) if r['claimMinChars']<=len(s.strip())<=r['claimMaxChars']]
+            if not sentences:
+                quote=''
+                for text in group['quotes']:
+                    if len(quote)+len(text)+1>min(r['quoteMaxChars'],r['claimMaxChars']):break
+                    quote+=(' ' if quote else '')+text
+                if len(quote)>=r['quoteMinChars']:sentences=[quote]
+            if sentences:
+                question={'factual':{'type':'choice','instructions':r['factQuestion'],'criteria':{'fact':r['factChoice'],'opinion':r['opinionChoice'],'request':r['requestChoice']}}}
+                factual=predict(agent,group['text'],question,r);a=factual['answers']['factual']
+                if a['choice']=='fact' and a.get('answer_confidence',0)>=r['claimConfidence'] and not factual.get('usage',{}).get('truncated'):
+                    segment['claim']=max(sentences,key=len);facts_left-=1
         # The service independently checks the release gate and coverage before allowing skipping.
         segment['autoSkipEligible']=segment['kind']=='skip' and segment['boundariesTrusted'] and PROFILE['releaseGatePassed'] and data.get('recommended',False)
         segments.append(segment);emit({'id':job_id,'event':'progress','completed':i+1,'total':len(groups)})
