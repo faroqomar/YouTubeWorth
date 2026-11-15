@@ -1,0 +1,23 @@
+docs/log/2026-11-15.md
+  s_f5150e3d557acd::t_88f08fa34462dc 29-32
+docs/ten-video-audit.md
+  s_f5150e3d557acd::t_1e3ebb670dbe1d 75-88,96-97
+docs/testing.md
+  s_f5150e3d557acd::t_9e6be8370ce375 59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1b4fbcf5ca4dd7911f6f1a2e1e0ec324b1bd383c",
+  "prompts": {},
+  "sessions": {
+    "s_f5150e3d557acd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1c9de-32ca-71a2-b605-c62eda110974",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
