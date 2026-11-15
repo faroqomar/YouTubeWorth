@@ -30,3 +30,34 @@ assert windows(data([{'start':0,'end':20,'text':'x'*200}]),TinyTokenizer())[0]['
 # Context only affects relevance, never target timestamps.
 s=judge(Model(p=.99),group('Relevant target'),data([],goal='Specific goal',title='Title'),'Earlier content','Later content');assert s['start']==10 and s['end']==30 and s['kind']=='context'
 print('Pipeline regressions passed: opinions, corrections, negation, instructions, mixed content, gaps, deduplication, capacity and target-only timestamps.')
+
+class CountingModel(Model):
+ def __init__(self,choices=None,**kwargs):
+  super().__init__(**kwargs);self.calls=[];self.choices=iter(choices) if choices else None
+ def predict(self,text,questions,**kwargs):
+  self.calls.append(next(iter(questions)))
+  result=super().predict(text,questions,**kwargs)
+  if self.choices and 'type' in questions:result['answers']['type']['choice']=next(self.choices)
+  return result
+filler=group('sponsor message sponsor announcement',quotes=['sponsor message','sponsor announcement'])
+for enabled,expected in [(False,'context'),(True,'skip')]:
+ m=CountingModel(choice='advertisement',p=.999)
+ s=judge(m,filler,{**data([]),'rules':{**r,'skipPromotion':enabled}})
+ assert s['kind']==expected and len(m.calls)==(3 if enabled else 1)
+m=CountingModel(choice='advertisement',p=.999)
+assert judge(m,group('sponsor message'),data([]))['kind']=='context'
+assert len(m.calls)==1
+# A mismatch or useful first part stops validation before the second half.
+for second in ['greeting','explanation']:
+ m=CountingModel(choices=['advertisement',second],p=.999)
+ assert judge(m,filler,data([]))['kind']=='context' and len(m.calls)==2
+m=CountingModel(choice='advertisement',p=.999,truncated=True)
+assert judge(m,filler,data([]))['kind']=='unknown' and len(m.calls)==1
+m=CountingModel()
+classify(m,data([{'start':0,'end':5,'text':'Short.'}]))
+assert m.calls==['type']
+# Usable quotes still receive a factual check.
+m=CountingModel()
+classify(m,data([{'start':0,'end':5,'text':'This synthetic explanation describes how a database index locates matching records.'}]))
+assert m.calls==['type','factual']
+print('Inference regressions passed: category agreement, single-cue abstention, early exit and quote preflight.')

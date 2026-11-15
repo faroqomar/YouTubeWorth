@@ -56,7 +56,7 @@ Filler cases are short boundary-level excerpts; they are not representative of a
 
 ## Regression and live checks
 
-The [ten-video production audit](ten-video-audit.md), started 2026-10-08 and completed 2026-10-09, evaluates the deployed four-choice fallback on complete fresh transcripts. It uses time-weighted caption overlap, unlike the historical excerpt-count experiment above. It preserves frozen reference reviews, source/configuration hashes and sanitized results. It does not tune the model or pass the release gate. Use `scripts/ten-video-audit.py` for reproduction; retained speech stays in ignored runtime storage.
+The [ten-video production audit](ten-video-audit.md), started 2026-10-08 and completed 2026-10-09, evaluates the deployed four-choice fallback on complete fresh transcripts. It uses time-weighted caption overlap, unlike the historical excerpt-count experiment above. It preserves frozen reference reviews, source/configuration hashes and sanitized results. It does not tune the model or pass the release gate. Follow the historical checkout and service instructions in the audit document for reproduction; current v3 code must not run against the frozen v2 evidence. Use that checkout's `scripts/ten-video-audit.py`; retained speech stays in ignored runtime storage.
 
 Fresh automated and live results are recorded in [the dated log](log/2026-10-08.md). The [0.3.1 history](verification-history.md) is preserved verbatim and must not be described as freshly rerun.
 

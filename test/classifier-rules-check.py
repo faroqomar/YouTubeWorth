@@ -20,7 +20,7 @@ class Decisions:
         ad='sponsor' in text
         return {'answers':{'type':{'choice':'advertisement' if ad else 'explanation','answer_confidence':.96},'factual':{'choice':'opinion' if ad else 'fact','answer_confidence':.95}},'usage':{}}
 def analyse(r):
-    return env['classify'](Decisions(),{'duration':80,'rules':r,'cues':[{'start':0,'text':'sponsor message'},{'start':40,'text':'Technical explanation'}]},1)
+    return env['classify'](Decisions(),{'duration':80,'rules':r,'cues':[{'start':0,'end':5,'text':'sponsor message'},{'start':5,'end':10,'text':'sponsor announcement'},{'start':40,'text':'Technical explanation'}]},1)
 a=analyse(rules)
 assert a['segments'][0]['kind']=='skip' and a['segments'][1]['kind']=='keep'
 assert analyse({**rules,'skipPromotion':False})['segments'][0]['kind']=='context'
