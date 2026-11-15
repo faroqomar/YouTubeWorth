@@ -1,0 +1,30 @@
+test/classifier-rules-check.py
+  s_f5150e3d557acd::t_9dcbb9a6e206a7 23
+worth_analysis.py
+  s_f5150e3d557acd::t_9dcbb9a6e206a7 89-90,94-96,99,101,129-141
+docs/analysis.md
+  s_f5150e3d557acd::t_cc7309e236e33d 36-43
+docs/log/2026-11-15.md
+  s_f5150e3d557acd::t_cc7309e236e33d 1-17,22-28
+  s_f5150e3d557acd::t_7525659360065c 18-21
+classifier-config.json
+  s_f5150e3d557acd::t_9dcbb9a6e206a7 2
+test/pipeline-check.py
+  s_f5150e3d557acd::t_24e776532913b8 33-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4039d5a5537e997c0f099bf58f8882078256b3d0",
+  "prompts": {},
+  "sessions": {
+    "s_f5150e3d557acd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1c9de-32ca-71a2-b605-c62eda110974",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
