@@ -72,12 +72,28 @@ Before changing the classifier, address the observed distinction between relevan
 
 Public original captions and complete responses are retained locally in ignored `runtime/evaluation/ten-video-2026-10-08/`. They are excluded from source packaging. The portable audit contains metadata, label rationales, hashes, sanitized interval decisions and aggregate results only.
 
+This is a historical v2 audit. Current v3 code intentionally fails its frozen classifier and pipeline hashes. Reproduce it from commit `121e7356398a90641fd612bb77ad287b9358b152`, whose classifier and pipeline hashes match `freeze.json`; changing only the classifier version is insufficient.
+
+Prepare a separate historical checkout (do not downgrade the installed checkout):
+
+```sh
+git clone https://github.com/faroqomar/YouTubeWorth.git YouTubeWorth-audit-v2
+cd YouTubeWorth-audit-v2
+git checkout --detach 121e7356398a90641fd612bb77ad287b9358b152
+```
+
+Install that checkout's pinned Python dependencies and model using the installation commands in `docs/operations.md`, but do not run `install-service.mjs` or load its extension. Restore the original retained audit inputs/responses under its ignored `runtime/evaluation/ten-video-2026-10-08/`; never commit or package them. Restore the frozen rules to its ignored `runtime/rules.json` using the version-2 settings envelope (`{"version":2,"rules":...}` with the rules object from `freeze.json`).
+
+The historical runner requires port 4318. Stop the installed LaunchAgent with `launchctl bootout "gui/$(id -u)/com.eros.youtubeworth"`, then run `npm start` in the historical checkout. It creates its own local credential; do not copy the installed credential. Wait for `/health` to report ready. Run the following commands from the historical checkout in another terminal:
+
 ```sh
 .venv/bin/python scripts/ten-video-audit.py collect
 # review.json and freeze.json must already exist before inference.
 .venv/bin/python scripts/ten-video-audit.py analyze
 .venv/bin/python scripts/ten-video-audit.py report
 ```
+
+After reproduction, stop the historical server and restore the installed service with `launchctl bootstrap "gui/$(id -u)" "$HOME/Library/LaunchAgents/com.eros.youtubeworth.plist"`. Check its `/health` endpoint. These historical-service steps are instructions, not a claim of a fresh audit run.
 
 `collect` reuses retained inputs; missing inputs are fetched from public YouTube captions through the installed service. `analyze` resumes existing responses rather than overwriting evidence. `report` checks frozen input, label, source, pipeline and classifier hashes, current rules, every production cache identity, full timeline totals and continuity. Rebuilding changed captions may fail those hashes; preserve the existing audit and create a new run instead of changing frozen labels.
 
