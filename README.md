@@ -1,37 +1,33 @@
-# Worth
+# YouTubeWorth
 
-A Chrome extension for finding useful parts of long YouTube videos. Open a video, click Worth, and review suggested passages in the side panel. Green marks above the player timeline show where they are; click a timestamp to jump there.
+Worth is a Chrome extension for finding useful passages in long YouTube videos. It reads timestamped captions, builds a viewing map in Chrome's side panel, and marks suggested passages in green above the player's timeline. Click a timestamp in the panel to jump there.
 
-Worth reads captions and runs [Laya](https://github.com/NandhaKishorM/laya) on your computer. You don't need a cloud AI account or API key.
+**Experimental alpha (0.4.0).** Check the suggestions against the video. Worth can miss useful speech or mislabel a passage. Automatic skipping is disabled because the classifier failed its held-out evaluation.
 
-> **Experimental alpha (0.4.0).** Expect wrong labels and missed passages. Automatic skipping is disabled because the classifier failed evaluation.
+## See it work
 
-## Demo
+Worth analyses a 39-minute video, shows the viewing map, and filters it to useful passages. Clicking a passage moves the YouTube player to 8:19. The edited capture shortens processing waits.
 
-![Worth analysing a YouTube video and highlighting useful passages](docs/media/demo.gif)
+![Worth analyses a YouTube video, filters its viewing map and jumps to a timestamp](docs/media/demo.gif)
 
-[Watch the MP4](docs/media/demo.mp4) · [Original video by Theo](https://www.youtube.com/watch?v=I82j7AzMU80)
-
-This is the installed extension on a 39-minute video. The demo shows analysis, player highlights, filtering and a jump to 4:52. The demo skips the waits between steps. The time estimates are model suggestions.
+[Watch the MP4](docs/media/demo.mp4) · [Capture notes and video credit](docs/media/README.md)
 
 <details>
 <summary>Screenshots</summary>
 
-![Viewing map and green player highlights](docs/media/viewing-map.png)
+**Viewing map before filtering**
 
-![Useful passages and timestamp navigation](docs/media/useful-only.png)
+<img src="docs/media/viewing-map.png" width="340" alt="Worth side panel showing the usefulness verdict, timeline and Useful only button">
 
-![Settings](docs/media/settings.png)
+**Filtered map after jumping to 8:19**
+
+![Worth showing useful passages next to the YouTube player at 8:19](docs/media/useful-only.png)
 
 </details>
 
-## Install
+## Install on an Apple Silicon Mac
 
-You'll need **Apple Silicon macOS, Node.js 22+, Python 3.12 and Chrome 116+**, plus several GB of space for the model and dependencies. Other platforms need testing. Downloads and YouTube need internet access; model inference runs on your machine.
-
-**1. Download and set up Worth**
-
-Run these commands in Terminal:
+You'll need Node.js 22 or newer, Python 3.12, Chrome 116 or newer, and disk space for the local model.
 
 ```sh
 git clone https://github.com/faroqomar/YouTubeWorth.git
@@ -42,43 +38,38 @@ node download-runtime.mjs
 node install-service.mjs
 ```
 
-The installer starts a local service and sets it to run at login. Keep the project folder in this location. The first model download can take a while; rerun the downloader if interrupted. You don't need `npm install` to run Worth.
-
-**2. Check the service**
+The downloader installs the pinned [Laya](https://github.com/NandhaKishorM/laya) model. The installer pairs this checkout and registers the local service with macOS. Wait for `"ready": true` before opening Worth.
 
 ```sh
 curl -fsS http://127.0.0.1:4318/health
 ```
 
-Wait for `"ready":true`. If the service isn't running, open `start.command` in the project folder.
+Open `chrome://extensions/`, enable **Developer mode**, and choose **Load unpacked**. Select the repository's `extension` folder. Worth appears in Chrome's Extensions menu. Pin it if you want it on the toolbar.
 
-**3. Add the extension to Chrome**
+If Worth asks for pairing, open [Local setup](http://127.0.0.1:4318/setup) on the same Mac and paste its code into **Pairing** in the side panel. See the [operations guide](docs/operations.md) for service recovery and extension reloads.
 
-1. Open `chrome://extensions/` and turn on **Developer mode**.
-2. Click **Load unpacked** and select the `extension` folder inside this project.
-3. Pin Worth from Chrome's Extensions menu.
-4. Open a YouTube video with captions and click Worth.
+## Map your first video
 
-If you see a pairing request, copy the code from [Local setup](http://127.0.0.1:4318/setup) into Worth's connection settings. Keep the code private.
+1. Open a regular YouTube video with captions. Click **Worth** in the Chrome toolbar or Extensions menu. The side panel starts analysing the video.
+2. Once the map appears, click **Useful only** to show the passages Worth marked useful. Turn the filter off to review optional and unknown intervals.
+3. Click a timestamp on a passage card. The YouTube player seeks to that time.
 
-For setup errors or service restarts, see [installation and troubleshooting](docs/operations.md).
+To focus on a topic, enter a viewing goal and click **Analyse this video** again. If Worth cannot read YouTube's captions, open **Show transcript** and retry, or import a timestamped `.srt` or `.vtt` file in the panel.
 
-## Using it
+## What Worth reads
 
-After analysis, click a timestamp to seek or **Useful only** to narrow the list. You can add a viewing goal before analysis, such as “understand how the database connection works.” Open **Settings** to change your preferences.
+Worth classifies captions with Laya on your Mac. You don't need a cloud AI account or API key. Silent demonstrations and information shown only on screen fall outside caption analysis. Optional **Compare sources** sends search terms to Wikipedia and compares retrieved text with selected quotes on your Mac. See [privacy and limitations](docs/privacy-and-limitations.md).
 
-If Worth can't retrieve captions, you can import a timestamped SRT/VTT file. Without captions, it can't judge a passage. It also can't see code, diagrams or demonstrations on screen. Review the surrounding context before jumping past something.
+Open the gear icon in the side panel to review [settings](docs/media/settings.png), including the viewing goal and player highlights.
 
 ## Development
 
-The extension uses Chrome Manifest V3 and plain JavaScript. A Node.js HTTP service handles requests on `127.0.0.1:4318`; a Python worker runs the model. See [architecture](docs/architecture.md) for the code layout.
-
 ```sh
-npm test             # Regression tests with synthetic text and controlled model output
-npm run docs:check   # Check settings documentation and local links
-npm run package      # Build YouTubeWorth.zip without credentials, models or runtime data
+npm test
+npm run docs:check
+npm run package
 ```
 
-Additional API and browser checks need the setup described in [testing](docs/testing.md). The [verification log](docs/log/2026-11-08.md) records the tests and live YouTube checks completed on the development machine. A fresh installation on another machine still needs testing.
+The package command builds `YouTubeWorth.zip` with the source, documentation, and curated media. Install the runtime and model separately. The archive contains an empty pairing configuration.
 
-Keep `.local-token`, `extension/local-config.js` and `runtime/` out of commits. For data handling and evaluation results, see [privacy](docs/privacy-and-limitations.md) and [analysis](docs/analysis.md). The remaining project docs are in [docs/](docs/README.md).
+See the [documentation index](docs/README.md) for [architecture](docs/architecture.md), [analysis](docs/analysis.md), and [tests and evaluation](docs/testing.md). The repository has no license file.
